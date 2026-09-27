@@ -1,0 +1,19 @@
+{
+  "name": "VOTO27",
+  "short_name": "VOTO27",
+  "description": "Aggregatore indipendente di sondaggi politici italiani.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0e1114",
+  "theme_color": "#0e1114",
+  "id": "/",
+  "icons": [
+    {
+      "src": "/icons/voto27-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
