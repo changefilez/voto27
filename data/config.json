@@ -1,0 +1,21 @@
+{
+  "app": "VOTO27",
+  "version": "1.0",
+  "release_channel": "stable",
+  "method_version": "v1",
+  "timezone": "Europe/Rome",
+  "data_last_update": "2026-09-15",
+  "election": {
+    "date": null,
+    "blackout_days": 15,
+    "blackout_enabled": true
+  },
+  "aggregation": {
+    "current_recency_tau_days": 21,
+    "historical_lookback_days": 42,
+    "historical_one_poll_per_institute": true,
+    "house_effect_correction": false,
+    "action_unassigned": true,
+    "generic_others_unassigned": true
+  }
+}

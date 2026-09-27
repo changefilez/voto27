@@ -1,0 +1,25 @@
+{
+  "id": "istituto-YYYY-MM-DD",
+  "institute": "Nome istituto",
+  "published": "YYYY-MM-DD",
+  "fieldwork": null,
+  "sample": null,
+  "method": null,
+  "parties": {
+    "FdI": null,
+    "PD": null,
+    "M5S": null,
+    "FN": null,
+    "FI": null,
+    "AVS": null,
+    "Lega": null,
+    "Azione": null,
+    "IV": null,
+    "+Europa": null,
+    "NM": null
+  },
+  "turnout": null,
+  "non_response_label": null,
+  "non_response_value": null,
+  "source": "https://..."
+}
