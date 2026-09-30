@@ -113,10 +113,10 @@ def chart(keys,labels,colors,low,high):
     svg+=f'<text x="48" y="258" fill="#233044" font-size="14">{start.day} settembre</text><text x="515" y="258" fill="#233044" font-size="14">{end.day} settembre</text></svg>'
     return svg+'<p>'+ ' · '.join(f'{label}: {fmt(current[key] if key in ["left","right"] else means[key])}%' for key,label in zip(keys,labels))+'</p>'
 trend = '<main id="trend" class="page">'+card(f'<div class="kicker">Snapshot v1 • {dt(as_of)}</div><h1>Trend</h1><p class="sub">Un punto per ogni data con nuovi dati disponibili; una sola rilevazione per istituto nei 42 giorni precedenti. Le linee collegano snapshot, non stime giornaliere.</p>')
-trend += card('<h2>I due poli</h2>'+chart(['left','right'],['Centrosinistra','Centrodestra'],['#1e5aaa','#aa3d18'],40,55))
-trend += card('<h2>Primi tre partiti</h2>'+chart(['fdi','pd','m5s'],['FdI','PD','M5S'],['#203c66','#a51f43','#725100'],10,30))
-trend += card('<h2>FN, FI, AVS e Lega</h2>'+chart(['fn','fi','avs','lega'],['Futuro Nazionale','Forza Italia','AVS','Lega'],['#633a90','#174f98','#286437','#9b3b17'],0,10))
-trend += card('<h2>Altri partiti rilevati</h2>'+chart(['azione','iv','europa','nm'],['Azione','Italia Viva','+Europa','Noi Moderati'],['#633a90','#174f98','#286437','#9b3b17'],0,5))
+trend += card('<h2>I due poli</h2>'+chart(['left','right'],['Centrosinistra','Centrodestra'],['#81b9f0','#f0aa86'],40,55))
+trend += card('<h2>Primi tre partiti</h2>'+chart(['fdi','pd','m5s'],['FdI','PD','M5S'],['#8eafe3','#ee92b2','#e4c865'],10,30))
+trend += card('<h2>FN, FI, AVS e Lega</h2>'+chart(['fn','fi','avs','lega'],['Futuro Nazionale','Forza Italia','AVS','Lega'],['#c4a0ed','#81b9f0','#9bcfa4','#eead87'],0,10))
+trend += card('<h2>Altri partiti rilevati</h2>'+chart(['azione','iv','europa','nm'],['Azione','Italia Viva','+Europa','Noi Moderati'],['#c4a0ed','#81b9f0','#9bcfa4','#eead87'],0,5))
 trend += card('<h2>Snapshot verificabili</h2><div style="overflow-x:auto"><table><thead><tr><th>Data</th><th>Istituti</th><th>CSX</th><th>CDX</th></tr></thead><tbody>'+''.join(f'<tr><td>{dt(s["date"])}</td><td>{len(s["selected_polls"])}</td><td>{fmt(s["left"])}%</td><td>{fmt(s["right"])}%</td></tr>' for s in series)+'</tbody></table></div><p class="tiny">Storico precedente: i grafici della versione del 15 settembre sono conservati nel repository, ma non prolungati perché mancano nel feed i dati di origine per ricostruirli. Nessun punto fittizio è aggiunto. Ogni punto pubblicato supera la soglia di almeno tre istituti e nessuno oltre il 60% per ogni partito.</p>')+'</main>'
 
 h=(ROOT/'index.html').read_text()
