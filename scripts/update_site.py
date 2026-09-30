@@ -140,6 +140,7 @@ config.update(data_last_update=as_of,sources_verified_on=data['verified_on'],car
 config['aggregation'].update(current_lookback_days=42,current_one_poll_per_institute=True,date_basis='publication')
 (ROOT/'data/config.json').write_text(json.dumps(config,ensure_ascii=False,indent=2)+'\n')
 h=re.sub(r'const CONFIG = .*?;',lambda m:'const CONFIG = '+json.dumps(config,ensure_ascii=False)+';',h)
+h=h.replace('.party:hover{background:#fafbfd}', '')
 style='\n<style id="verified-data-style">.verified-poll{margin:14px 0;padding:14px;background:linear-gradient(120deg,var(--poll-bg,#edf6fc),#fffaf3);color:#233044;border:1px solid #bfd4e2;border-left:4px solid var(--poll-accent,#79aec9);border-radius:14px}.verified-poll summary{cursor:pointer}.verified-poll summary,.verified-poll summary b,.verified-poll p,.verified-poll .tiny{color:#233044 !important}.verified-poll summary b{color:var(--poll-ink,#244d75) !important}.verified-poll summary span{color:#3d665e;font-size:12px;font-weight:650}.verified-poll a{color:#174f98 !important;text-decoration:underline}#trend table{width:100%;border-collapse:collapse}#trend td,#trend th{padding:9px;text-align:left;border-bottom:1px solid #d5dbe3}</style>\n'
 # Harmonized pastel identities, with dark readable institute names.
 PALETTE = {
@@ -154,7 +155,8 @@ PALETTE = {
     'ixe': ('f4ecf5','ba96bf','67446d'),
 }
 palette_css = ''.join('.verified-poll[data-institute="'+key+'"]{--poll-bg:#'+bg+';--poll-accent:#'+accent+';--poll-ink:#'+ink+'}' for key,(bg,accent,ink) in PALETTE.items())
-style=style.replace('</style>',palette_css+'</style>')
+party_css = '#oggi .party summary,#oggi .party summary .pname,#oggi .party summary b{color:#f4f6f8 !important}#oggi .party[open]{background:#1b2631}#oggi .party .party-detail{color:#c5ccd5 !important}#oggi .party summary:focus-visible{outline:2px solid #9cc4e5;outline-offset:2px;border-radius:12px}#oggi .party summary .pname::after{content:"⌄";font-size:14px;color:#a9c9e7;margin-left:4px}#oggi .party[open] summary .pname::after{content:"⌃"}@media(hover:hover) and (pointer:fine){#oggi .party:hover{background:#1b2631}}'
+style=style.replace('</style>',palette_css+party_css+'</style>')
 if 'id="verified-data-style"' in h:
     h=re.sub(r'<style id="verified-data-style">.*?</style>',lambda m:style.strip(),h,flags=re.S)
 else:
