@@ -107,9 +107,9 @@ def chart(keys,labels,colors,low,high):
     for key,label,color in zip(keys,labels,colors):
         values=[s[key] if key in ['left','right'] else s['parties'][key] for s in series]
         points=' '.join(f'{x(s):.1f},{y(v):.1f}' for s,v in zip(series,values))
-        svg+=f'<polyline points="{points}" fill="none" stroke="{color}" stroke-width="3"/>'
+        svg+=f'<polyline points="{points}" fill="none" stroke="{color}" stroke-width="4.5" vector-effect="non-scaling-stroke" stroke-linecap="round" stroke-linejoin="round"/>'
         for s,v in zip(series,values):
-            svg+=f'<circle cx="{x(s):.1f}" cy="{y(v):.1f}" r="3" fill="{color}"><title>{dt(s["date"])} · {label}: {fmt(v)}%</title></circle>'
+            svg+=f'<circle cx="{x(s):.1f}" cy="{y(v):.1f}" r="4.5" fill="{color}"><title>{dt(s["date"])} · {label}: {fmt(v)}%</title></circle>'
     svg+=f'<text x="48" y="258" fill="#233044" font-size="14">{start.day} settembre</text><text x="515" y="258" fill="#233044" font-size="14">{end.day} settembre</text></svg>'
     return svg+'<p>'+ ' · '.join(f'{label}: {fmt(current[key] if key in ["left","right"] else means[key])}%' for key,label in zip(keys,labels))+'</p>'
 trend = '<main id="trend" class="page">'+card(f'<div class="kicker">Snapshot v1 • {dt(as_of)}</div><h1>Trend</h1><p class="sub">Un punto per ogni data con nuovi dati disponibili; una sola rilevazione per istituto nei 42 giorni precedenti. Le linee collegano snapshot, non stime giornaliere.</p>')
