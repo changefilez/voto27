@@ -140,8 +140,11 @@ config.update(data_last_update=as_of,sources_verified_on=data['verified_on'],car
 config['aggregation'].update(current_lookback_days=42,current_one_poll_per_institute=True,date_basis='publication')
 (ROOT/'data/config.json').write_text(json.dumps(config,ensure_ascii=False,indent=2)+'\n')
 h=re.sub(r'const CONFIG = .*?;',lambda m:'const CONFIG = '+json.dumps(config,ensure_ascii=False)+';',h)
-style='\n<style id="verified-data-style">.verified-poll{margin:14px 0;padding:14px;background:#fff;color:#233044;border:1px solid #d5dbe3;border-radius:14px}.verified-poll summary{cursor:pointer;color:#233044}.verified-poll p,.verified-poll .tiny{color:#233044}.verified-poll a{color:#174f98;text-decoration:underline}#trend table{width:100%;border-collapse:collapse}#trend td,#trend th{padding:9px;text-align:left;border-bottom:1px solid #d5dbe3}</style>\n'
-if 'id="verified-data-style"' not in h: h=h.replace('</head>',style+'</head>')
+style='\n<style id="verified-data-style">.verified-poll{margin:14px 0;padding:14px;background:#fff;color:#233044;border:1px solid #d5dbe3;border-radius:14px}.verified-poll summary{cursor:pointer}.verified-poll summary,.verified-poll summary b,.verified-poll p,.verified-poll .tiny{color:#233044 !important}.verified-poll a{color:#174f98 !important;text-decoration:underline}#trend table{width:100%;border-collapse:collapse}#trend td,#trend th{padding:9px;text-align:left;border-bottom:1px solid #d5dbe3}</style>\n'
+if 'id="verified-data-style"' in h:
+    h=re.sub(r'<style id="verified-data-style">.*?</style>',lambda m:style.strip(),h,flags=re.S)
+else:
+    h=h.replace('</head>',style+'</head>')
 ids=re.findall(r'\bid="([^"]+)"',h); assert len(ids)==len(set(ids))
 assert 'ricalcolo della serie e dei grafici è in corso' not in h
 (ROOT/'index.html').write_text(h)
