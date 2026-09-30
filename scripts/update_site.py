@@ -84,7 +84,7 @@ for p in sorted((p for p in polls if p['source']),key=lambda p:(p['published'],p
     vals = ' · '.join(f'{PARTIES[k]} {str(v).replace(".",",")}%' for k,v in p['values'].items())
     missing = ', '.join(PARTIES[k] for k in PARTIES if k not in p['values']) or 'nessuno tra gli 11 partiti mostrati'
     period = ' – '.join(dt(x) for x in p['fieldwork']) if p['fieldwork'] else 'non verificato'
-    recent += f'<details class="verified-poll"><summary><b>{NAMES[p["institute"]]} · {dt(p["published"])}</b><br><span>{"Incluso nei valori disponibili" if p["id"] in selected else "Superato nella media corrente"}</span></summary><p>{vals}</p><p class="tiny">Interviste: {period}. Metodo: {p["method"] or "non verificato"}. Campione: {p["sample"] or "non verificato"}. Partiti mancanti: {missing}.</p>'
+    recent += f'<details class="verified-poll" data-institute="{p["institute"]}"><summary><b>{NAMES[p["institute"]]} · {dt(p["published"])}</b><br><span>{"Incluso nei valori disponibili" if p["id"] in selected else "Superato nella media corrente"}</span></summary><p>{vals}</p><p class="tiny">Interviste: {period}. Metodo: {p["method"] or "non verificato"}. Campione: {p["sample"] or "non verificato"}. Partiti mancanti: {missing}.</p>'
     recent += f'<p class="tiny">{escape(p["note"])}</p><p><a href="{escape(p["source"],quote=True)}" target="_blank" rel="noopener noreferrer">Fonte: {escape(p["source_kind"])} ↗</a></p>'
     for link,label in [('primary_source','Programma originale'),('corroborating_source','Riscontro e dettaglio dei valori')]:
         if p.get(link): recent += f'<p><a href="{p[link]}" target="_blank" rel="noopener noreferrer">{label} ↗</a></p>'
@@ -140,7 +140,21 @@ config.update(data_last_update=as_of,sources_verified_on=data['verified_on'],car
 config['aggregation'].update(current_lookback_days=42,current_one_poll_per_institute=True,date_basis='publication')
 (ROOT/'data/config.json').write_text(json.dumps(config,ensure_ascii=False,indent=2)+'\n')
 h=re.sub(r'const CONFIG = .*?;',lambda m:'const CONFIG = '+json.dumps(config,ensure_ascii=False)+';',h)
-style='\n<style id="verified-data-style">.verified-poll{margin:14px 0;padding:14px;background:linear-gradient(120deg,#edf6fc,#fff8ed);color:#233044;border:1px solid #bfd4e2;border-left:4px solid #79aec9;border-radius:14px}.verified-poll summary{cursor:pointer}.verified-poll summary,.verified-poll summary b,.verified-poll p,.verified-poll .tiny{color:#233044 !important}.verified-poll summary b{color:#244d75 !important}.verified-poll summary span{color:#3d665e;font-size:12px;font-weight:650}.verified-poll a{color:#174f98 !important;text-decoration:underline}#trend table{width:100%;border-collapse:collapse}#trend td,#trend th{padding:9px;text-align:left;border-bottom:1px solid #d5dbe3}</style>\n'
+style='\n<style id="verified-data-style">.verified-poll{margin:14px 0;padding:14px;background:linear-gradient(120deg,var(--poll-bg,#edf6fc),#fffaf3);color:#233044;border:1px solid #bfd4e2;border-left:4px solid var(--poll-accent,#79aec9);border-radius:14px}.verified-poll summary{cursor:pointer}.verified-poll summary,.verified-poll summary b,.verified-poll p,.verified-poll .tiny{color:#233044 !important}.verified-poll summary b{color:var(--poll-ink,#244d75) !important}.verified-poll summary span{color:#3d665e;font-size:12px;font-weight:650}.verified-poll a{color:#174f98 !important;text-decoration:underline}#trend table{width:100%;border-collapse:collapse}#trend td,#trend th{padding:9px;text-align:left;border-bottom:1px solid #d5dbe3}</style>\n'
+# Harmonized pastel identities, with dark readable institute names.
+PALETTE = {
+    'swg': ('eaf3fc','79a9d1','244d75'),
+    'ipsos': ('f1edfa','ad98cc','594174'),
+    'termometro': ('fff3da','d6b264','72551f'),
+    'piepoli': ('edf4e7','a0b885','425d32'),
+    'quorum': ('e5f5f1','7eb8ac','285e55'),
+    'eumetra': ('fbecef','d09caa','783f51'),
+    'emg': ('fff0e6','d6a182','78472c'),
+    'only': ('eef0fc','97a4ce','414f7b'),
+    'ixe': ('f4ecf5','ba96bf','67446d'),
+}
+palette_css = ''.join('.verified-poll[data-institute="'+key+'"]{--poll-bg:#'+bg+';--poll-accent:#'+accent+';--poll-ink:#'+ink+'}' for key,(bg,accent,ink) in PALETTE.items())
+style=style.replace('</style>',palette_css+'</style>')
 if 'id="verified-data-style"' in h:
     h=re.sub(r'<style id="verified-data-style">.*?</style>',lambda m:style.strip(),h,flags=re.S)
 else:
