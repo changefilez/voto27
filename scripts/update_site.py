@@ -102,7 +102,7 @@ def chart(keys,labels,colors,low,high):
     def x(s): return 48+550*(date.fromisoformat(s['date'])-start).days/max(1,(end-start).days)
     def y(v): return 225-185*(v-low)/(high-low)
     svg=f'<svg viewBox="0 0 {width} {height}" role="img" aria-label="Medie ponderate, punti reali dal {dt(series[0]["date"])} al {dt(as_of)}" style="width:100%;background:#fff;color:#233044">'
-    for v in range(low,high+1,5):
+    for v in range(low,high+1,1 if high-low<=10 else 5):
         svg+=f'<line x1="48" x2="600" y1="{y(v):.1f}" y2="{y(v):.1f}" stroke="#d5dbe3"/><text x="6" y="{y(v)+4:.1f}" fill="#233044" font-size="14">{v}%</text>'
     for key,label,color in zip(keys,labels,colors):
         values=[s[key] if key in ['left','right'] else s['parties'][key] for s in series]
@@ -115,8 +115,10 @@ def chart(keys,labels,colors,low,high):
 trend = '<main id="trend" class="page">'+card(f'<div class="kicker">Snapshot v1 • {dt(as_of)}</div><h1>Trend</h1><p class="sub">Un punto per ogni data con nuovi dati disponibili; una sola rilevazione per istituto nei 42 giorni precedenti. Le linee collegano snapshot, non stime giornaliere.</p>')
 trend += card('<h2>I due poli</h2>'+chart(['left','right'],['Centrosinistra','Centrodestra'],['#81b9f0','#f0aa86'],40,55))
 trend += card('<h2>Primi tre partiti</h2>'+chart(['fdi','pd','m5s'],['FdI','PD','M5S'],['#8eafe3','#ee92b2','#e4c865'],10,30))
-trend += card('<h2>FN, FI, AVS e Lega</h2>'+chart(['fn','fi','avs','lega'],['Futuro Nazionale','Forza Italia','AVS','Lega'],['#c4a0ed','#81b9f0','#9bcfa4','#eead87'],0,10))
-trend += card('<h2>Altri partiti rilevati</h2>'+chart(['azione','iv','europa','nm'],['Azione','Italia Viva','+Europa','Noi Moderati'],['#c4a0ed','#81b9f0','#9bcfa4','#eead87'],0,5))
+def separate_charts(keys,labels,colors,low,high):
+    return '<p class="tiny">Un grafico per partito, tutti con la stessa scala: '+str(low)+'–'+str(high)+'%. Le percentuali non sono spostate per separare le linee.</p><div class="party-trend-grid">'+''.join('<div class="party-trend-panel"><h3>'+label+'</h3>'+chart([key],[label],[color],low,high)+'</div>' for key,label,color in zip(keys,labels,colors))+'</div>'
+trend += card('<h2>FN, FI, AVS e Lega</h2>'+separate_charts(['fn','fi','avs','lega'],['Futuro Nazionale','Forza Italia','AVS','Lega'],['#c4a0ed','#81b9f0','#9bcfa4','#eead87'],4,9))
+trend += card('<h2>Altri partiti rilevati</h2>'+separate_charts(['azione','iv','europa','nm'],['Azione','Italia Viva','+Europa','Noi Moderati'],['#c4a0ed','#81b9f0','#9bcfa4','#eead87'],0,5))
 trend += card('<h2>Snapshot verificabili</h2><div style="overflow-x:auto"><table><thead><tr><th>Data</th><th>Istituti</th><th>CSX</th><th>CDX</th></tr></thead><tbody>'+''.join(f'<tr><td>{dt(s["date"])}</td><td>{len(s["selected_polls"])}</td><td>{fmt(s["left"])}%</td><td>{fmt(s["right"])}%</td></tr>' for s in series)+'</tbody></table></div><p class="tiny">Storico precedente: i grafici della versione del 15 settembre sono conservati nel repository, ma non prolungati perché mancano nel feed i dati di origine per ricostruirli. Nessun punto fittizio è aggiunto. Ogni punto pubblicato supera la soglia di almeno tre istituti e nessuno oltre il 60% per ogni partito.</p>')+'</main>'
 
 h=(ROOT/'index.html').read_text()
@@ -156,7 +158,8 @@ PALETTE = {
 }
 palette_css = ''.join('.verified-poll[data-institute="'+key+'"]{--poll-bg:#'+bg+';--poll-accent:#'+accent+';--poll-ink:#'+ink+'}' for key,(bg,accent,ink) in PALETTE.items())
 party_css = '#oggi .party summary,#oggi .party summary .pname,#oggi .party summary b{color:#f4f6f8 !important}#oggi .party[open]{background:#1b2631}#oggi .party .party-detail{color:#c5ccd5 !important}#oggi .party summary:focus-visible{outline:2px solid #9cc4e5;outline-offset:2px;border-radius:12px}#oggi .party summary .pname::after{content:"⌄";font-size:14px;color:#a9c9e7;margin-left:4px}#oggi .party[open] summary .pname::after{content:"⌃"}@media(hover:hover) and (pointer:fine){#oggi .party:hover{background:#1b2631}}'
-style=style.replace('</style>',palette_css+party_css+'</style>')
+separate_css = '.party-trend-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.party-trend-panel{min-width:0;padding-top:10px;border-top:1px solid #3b4652}.party-trend-panel h3{margin:8px 0;font-size:16px}.party-trend-panel p{font-size:13px}@media(max-width:640px){.party-trend-grid{grid-template-columns:1fr;gap:14px}}'
+style=style.replace('</style>',palette_css+party_css+separate_css+'</style>')
 if 'id="verified-data-style"' in h:
     h=re.sub(r'<style id="verified-data-style">.*?</style>',lambda m:style.strip(),h,flags=re.S)
 else:
