@@ -1,5 +1,5 @@
 {
-  "verified_on": "2026-09-30",
+  "verified_on": "2026-10-09",
   "polls": [
     {
       "id": "bidimedia-2026-08-24",
@@ -21,10 +21,15 @@
       "comparable": true,
       "source": null,
       "source_kind": "archivio VOTO27",
-      "fieldwork": null,
+      "fieldwork": [
+        "2026-08-22",
+        "2026-08-24"
+      ],
       "method": null,
-      "sample": null,
-      "note": "Dati già presenti nel sito; link e metadati non conservati nella scheda originaria."
+      "sample": 1000,
+      "note": "Dati ereditati dal sito; fonte originale non conservata. Metadati storici eventualmente disponibili indicati separatamente.",
+      "archive_metadata": "2026-08-24 campione 1.000 • fieldwork 2026-08-22 → 2026-08-24",
+      "metadata_origin": "Metadati storici conservati dalla precedente scheda VOTO27, non nuovamente verificati."
     },
     {
       "id": "winpoll-2026-08-27",
@@ -45,10 +50,15 @@
       "comparable": true,
       "source": null,
       "source_kind": "archivio VOTO27",
-      "fieldwork": null,
+      "fieldwork": [
+        "2026-08-18",
+        "2026-08-27"
+      ],
       "method": null,
-      "sample": null,
-      "note": "Dati già presenti nel sito; link e metadati non conservati nella scheda originaria."
+      "sample": 1500,
+      "note": "Dati ereditati dal sito; fonte originale non conservata. Metadati storici eventualmente disponibili indicati separatamente.",
+      "archive_metadata": "2026-08-27 campione 1.500 • fieldwork 2026-08-18 → 2026-08-27",
+      "metadata_origin": "Metadati storici conservati dalla precedente scheda VOTO27, non nuovamente verificati."
     },
     {
       "id": "emg-2026-09-01",
@@ -70,10 +80,15 @@
       "comparable": true,
       "source": null,
       "source_kind": "archivio VOTO27",
-      "fieldwork": null,
+      "fieldwork": [
+        "2026-08-31",
+        "2026-09-01"
+      ],
       "method": null,
-      "sample": null,
-      "note": "Dati già presenti nel sito; link e metadati non conservati nella scheda originaria."
+      "sample": 1000,
+      "note": "Dati ereditati dal sito; fonte originale non conservata. Metadati storici eventualmente disponibili indicati separatamente.",
+      "archive_metadata": "2026-09-01 campione 1.000 • fieldwork 2026-08-31 → 2026-09-01",
+      "metadata_origin": "Metadati storici conservati dalla precedente scheda VOTO27, non nuovamente verificati."
     },
     {
       "id": "only-2026-09-03",
@@ -95,15 +110,20 @@
       "comparable": true,
       "source": null,
       "source_kind": "archivio VOTO27",
-      "fieldwork": null,
+      "fieldwork": [
+        "2026-09-02",
+        "2026-09-03"
+      ],
       "method": null,
       "sample": null,
-      "note": "Dati già presenti nel sito; link e metadati non conservati nella scheda originaria."
+      "note": "Dati ereditati dal sito; fonte originale non conservata. Metadati storici eventualmente disponibili indicati separatamente.",
+      "archive_metadata": "2026-09-03 fieldwork 2026-09-02 → 2026-09-03 | Indecisi e astensionisti:  43,1%",
+      "metadata_origin": "Metadati storici conservati dalla precedente scheda VOTO27, non nuovamente verificati."
     },
     {
       "id": "quorum-youtrend-2026-09-03",
       "institute": "quorum",
-      "published": "2026-09-03",
+      "published": "2026-09-04",
       "values": {
         "fdi": 26.5,
         "pd": 22.2,
@@ -118,12 +138,20 @@
         "nm": 0.9
       },
       "comparable": true,
-      "source": null,
-      "source_kind": "archivio VOTO27",
-      "fieldwork": null,
-      "method": null,
-      "sample": null,
-      "note": "Dati già presenti nel sito; link e metadati non conservati nella scheda originaria."
+      "source": "https://tg24.sky.it/politica/2026/09/04/sondaggio-governo-meloni",
+      "source_kind": "primaria, Sky TG24",
+      "fieldwork": [
+        "2026-08-31",
+        "2026-09-03"
+      ],
+      "method": "CAWI",
+      "sample": 800,
+      "note": "Data di pubblicazione corretta al 4 settembre; il 3 settembre è la fine delle interviste. ID storico conservato.",
+      "archive_metadata": "2026-09-04 campione 800 • CAWI • fieldwork 2026-08-31 → 2026-09-03 | Indecisi e astenuti:  33,6%",
+      "nonresponse": {
+        "label": "Indecisi e astenuti",
+        "value": 33.6
+      }
     },
     {
       "id": "termometro-2026-09-03",
@@ -145,10 +173,15 @@
       "comparable": true,
       "source": null,
       "source_kind": "archivio VOTO27",
-      "fieldwork": null,
+      "fieldwork": [
+        "2026-09-02",
+        "2026-09-03"
+      ],
       "method": null,
-      "sample": null,
-      "note": "Dati già presenti nel sito; link e metadati non conservati nella scheda originaria."
+      "sample": 2200,
+      "note": "Dati ereditati dal sito; fonte originale non conservata. Metadati storici eventualmente disponibili indicati separatamente.",
+      "archive_metadata": "2026-09-03 campione 2.200 • fieldwork 2026-09-02 → 2026-09-03",
+      "metadata_origin": "Metadati storici conservati dalla precedente scheda VOTO27, non nuovamente verificati."
     },
     {
       "id": "swg-2026-09-07",
@@ -170,10 +203,15 @@
       "comparable": true,
       "source": null,
       "source_kind": "archivio VOTO27",
-      "fieldwork": null,
+      "fieldwork": [
+        "2026-09-02",
+        "2026-09-07"
+      ],
       "method": null,
-      "sample": null,
-      "note": "Dati già presenti nel sito; link e metadati non conservati nella scheda originaria."
+      "sample": 1200,
+      "note": "Dati ereditati dal sito; fonte originale non conservata. Metadati storici eventualmente disponibili indicati separatamente.",
+      "archive_metadata": "2026-09-07 campione 1.200 • CATI/CAMI/CAWI • fieldwork 2026-09-02 → 2026-09-07 | Non si esprime:  29,0%",
+      "metadata_origin": "Metadati storici conservati dalla precedente scheda VOTO27, non nuovamente verificati."
     },
     {
       "id": "noto-2026-09-08",
@@ -194,7 +232,9 @@
       "fieldwork": null,
       "method": null,
       "sample": null,
-      "note": "Dati già presenti nel sito; link e metadati non conservati nella scheda originaria."
+      "note": "Dati ereditati dal sito; fonte originale non conservata. Metadati storici eventualmente disponibili indicati separatamente.",
+      "archive_metadata": "2026-09-08 | Escluso dalla media partiti corrente perché alcune liste sono aggregate in modo non comparabile. | Affluenza stimata:  61,0% • astensione potenziale 39,0%",
+      "metadata_origin": "Metadati storici conservati dalla precedente scheda VOTO27, non nuovamente verificati."
     },
     {
       "id": "tecne-2026-09-09",
@@ -219,7 +259,9 @@
       "fieldwork": null,
       "method": null,
       "sample": null,
-      "note": "Dati già presenti nel sito; link e metadati non conservati nella scheda originaria."
+      "note": "Dati ereditati dal sito; fonte originale non conservata. Metadati storici eventualmente disponibili indicati separatamente.",
+      "archive_metadata": "2026-09-09 | 801 interviste • CATI/CAWI/CAMI. Astensione e indecisi: 43,3%.",
+      "metadata_origin": "Metadati storici conservati dalla precedente scheda VOTO27, non nuovamente verificati."
     },
     {
       "id": "emg-2026-09-10",
@@ -244,7 +286,9 @@
       "fieldwork": null,
       "method": null,
       "sample": null,
-      "note": "Dati già presenti nel sito; link e metadati non conservati nella scheda originaria."
+      "note": "Dati ereditati dal sito; fonte originale non conservata. Metadati storici eventualmente disponibili indicati separatamente.",
+      "archive_metadata": "2026-09-10 | Fieldwork 07/09/2026 → 08/09/2026. Campione e metodo non disponibili nei materiali verificati.",
+      "metadata_origin": "Metadati storici conservati dalla precedente scheda VOTO27, non nuovamente verificati."
     },
     {
       "id": "ixe-2026-09-10",
@@ -298,7 +342,9 @@
       "fieldwork": null,
       "method": null,
       "sample": null,
-      "note": "Dati già presenti nel sito; link e metadati non conservati nella scheda originaria."
+      "note": "Dati ereditati dal sito; fonte originale non conservata. Metadati storici eventualmente disponibili indicati separatamente.",
+      "archive_metadata": "2026-09-10 | Campione 800 • fieldwork 09/09/2026 → 10/09/2026 • metodo non verificato. Rilevazione distinta da Porta a Porta.",
+      "metadata_origin": "Metadati storici conservati dalla precedente scheda VOTO27, non nuovamente verificati."
     },
     {
       "id": "bidimedia-2026-09-11",
@@ -323,7 +369,9 @@
       "fieldwork": null,
       "method": null,
       "sample": null,
-      "note": "Dati già presenti nel sito; link e metadati non conservati nella scheda originaria."
+      "note": "Dati ereditati dal sito; fonte originale non conservata. Metadati storici eventualmente disponibili indicati separatamente.",
+      "archive_metadata": "2026-09-11 | Campione 1.000 • CAWI/panel • fieldwork 03/09/2026 → 06/09/2026. Italia Viva rilevata come “Casa Riformista – IV”.",
+      "metadata_origin": "Metadati storici conservati dalla precedente scheda VOTO27, non nuovamente verificati."
     },
     {
       "id": "piepoli-2026-09-11",
@@ -346,7 +394,9 @@
       "fieldwork": null,
       "method": null,
       "sample": null,
-      "note": "Dati già presenti nel sito; link e metadati non conservati nella scheda originaria."
+      "note": "Dati ereditati dal sito; fonte originale non conservata. Metadati storici eventualmente disponibili indicati separatamente.",
+      "archive_metadata": "2026-09-11 | Valori non pubblicati separatamente per Azione e Italia Viva; campione, metodo e periodo non disponibili.",
+      "metadata_origin": "Metadati storici conservati dalla precedente scheda VOTO27, non nuovamente verificati."
     },
     {
       "id": "termometro-2026-09-11",
@@ -368,7 +418,9 @@
       "fieldwork": null,
       "method": null,
       "sample": null,
-      "note": "Dati già presenti nel sito; link e metadati non conservati nella scheda originaria."
+      "note": "Dati ereditati dal sito; fonte originale non conservata. Metadati storici eventualmente disponibili indicati separatamente.",
+      "archive_metadata": "2026-09-11 | 2.600 interviste • CAWI • fieldwork 08/09/2026 → 10/09/2026. Valori IV, +Europa e Noi Moderati non disponibili separatamente.",
+      "metadata_origin": "Metadati storici conservati dalla precedente scheda VOTO27, non nuovamente verificati."
     },
     {
       "id": "swg-2026-09-14",
@@ -393,7 +445,9 @@
       "fieldwork": null,
       "method": null,
       "sample": null,
-      "note": "Dati già presenti nel sito; link e metadati non conservati nella scheda originaria."
+      "note": "Dati ereditati dal sito; fonte originale non conservata. Metadati storici eventualmente disponibili indicati separatamente.",
+      "archive_metadata": "2026-09-14 | Non si esprime: 28,9%.",
+      "metadata_origin": "Metadati storici conservati dalla precedente scheda VOTO27, non nuovamente verificati."
     },
     {
       "id": "only-2026-09-15",
@@ -418,7 +472,9 @@
       "fieldwork": null,
       "method": null,
       "sample": null,
-      "note": "Dati già presenti nel sito; link e metadati non conservati nella scheda originaria."
+      "note": "Dati ereditati dal sito; fonte originale non conservata. Metadati storici eventualmente disponibili indicati separatamente.",
+      "archive_metadata": "2026-09-15 | Indecisi e astenuti: 44,5% • periodo, campione e metodo non disponibili nei materiali verificati.",
+      "metadata_origin": "Metadati storici conservati dalla precedente scheda VOTO27, non nuovamente verificati."
     },
     {
       "id": "only-2026-09-18",
@@ -446,7 +502,7 @@
       ],
       "method": "CAWI",
       "sample": 800,
-      "note": "Prima diffusione 18 settembre (rilevazione 16–17 settembre); articolo del 25 settembre è una ripubblicazione. Segnalazione di una successiva rilevazione del 24 settembre ancora da verificare alla fonte originale: non aggiunta come dato."
+      "note": "Nota conservata dal controllo del 30 settembre: Prima diffusione 18 settembre (rilevazione 16–17 settembre); articolo del 25 settembre è una ripubblicazione. Segnalazione di una successiva rilevazione del 24 settembre ancora da verificare alla fonte originale: non aggiunta come dato."
     },
     {
       "id": "emg-2026-09-24",
@@ -641,6 +697,339 @@
         "value": 26
       },
       "corroborating_source": "https://www.la7.it/intanto/articolo/ultimi-sondaggi-politici-vannacci-fermo-all8-cresce-fratelli-ditalia-659426"
+    },
+    {
+      "id": "eumetra-2026-09-18",
+      "institute": "eumetra",
+      "published": "2026-09-18",
+      "values": {
+        "fn": 7.7
+      },
+      "comparable": false,
+      "source": null,
+      "source_kind": "archivio VOTO27",
+      "fieldwork": null,
+      "method": null,
+      "sample": null,
+      "note": "Scheda storica parziale ereditata dalla pagina, con dato riferito al 16 settembre. Data originaria non nuovamente verificata. Superata dalle rilevazioni successive.",
+      "exclusion_reason": "scheda storica parziale non verificata"
+    },
+    {
+      "id": "only-2026-09-29",
+      "institute": "only",
+      "published": "2026-09-29",
+      "values": {
+        "fdi": 27.5,
+        "pd": 20,
+        "m5s": 11.6,
+        "fn": 7,
+        "fi": 7.8,
+        "avs": 6.5,
+        "lega": 6.5,
+        "azione": 3.3,
+        "iv": 2.2,
+        "europa": 1.4,
+        "nm": 1
+      },
+      "comparable": true,
+      "source": "https://www.adnkronos.com/politica/sondaggio-elezioni-porta-a-porta-oggi-voto_6uHXwbVBEmMhMZ78XMECVk",
+      "source_kind": "agenzia Adnkronos: Porta a Porta",
+      "fieldwork": null,
+      "method": null,
+      "sample": null,
+      "nonresponse": {
+        "label": "Astenuti-indecisi",
+        "value": 44.7
+      },
+      "extra_values": {
+        "Altri": 5.2
+      }
+    },
+    {
+      "id": "eumetra-2026-10-02",
+      "institute": "eumetra",
+      "published": "2026-10-02",
+      "values": {
+        "fdi": 27.1,
+        "pd": 20.5,
+        "m5s": 12.8,
+        "fn": 8,
+        "fi": 7.4,
+        "avs": 6.4,
+        "lega": 5.5,
+        "azione": 3.2,
+        "iv": 2.2,
+        "europa": 1.7,
+        "nm": 1
+      },
+      "comparable": true,
+      "source": "https://www.termometropolitico.it/1634394_sondaggi-elettorali-eumetra-fdi-centrodesta.html",
+      "source_kind": "Termometro Politico: dati Eumetra",
+      "fieldwork": [
+        "2026-09-29",
+        "2026-09-30"
+      ],
+      "method": "CAWI",
+      "sample": 800,
+      "corroborating_source": "https://sondaggibidimedia.com/sondaggio-eumetra-30-settembre-2026/",
+      "note": "Data della prima pubblicazione documentata nelle fonti conservate: 2 ottobre. Periodo, metodo e campione riportati da BiDiMedia; fonte televisiva originale non conservata. Non è un sondaggio del 6 ottobre, data della ripubblicazione."
+    },
+    {
+      "id": "termometro-2026-10-02",
+      "institute": "termometro",
+      "published": "2026-10-02",
+      "values": {
+        "fdi": 27.5,
+        "pd": 21.1,
+        "m5s": 12.9,
+        "fn": 7.3,
+        "fi": 7.3,
+        "avs": 6.3,
+        "lega": 5.2,
+        "azione": 2.9,
+        "iv": 2.4,
+        "europa": 1.7
+      },
+      "comparable": true,
+      "source": "https://www.termometropolitico.it/1634375_sondaggi-politici-elettorali-tp-02-10-2026.html",
+      "source_kind": "fonte primaria",
+      "fieldwork": null,
+      "method": null,
+      "sample": null,
+      "note": "Valori esplicitati nel testo originale. Noi Moderati, periodo, metodo e campione non verificati: nessuna imputazione.",
+      "extra_values": {
+        "Altri": 4.3
+      }
+    },
+    {
+      "id": "termometro-2026-10-09",
+      "institute": "termometro",
+      "published": "2026-10-09",
+      "values": {
+        "fdi": 27.8,
+        "pd": 21.1,
+        "m5s": 12.7,
+        "fn": 7.4,
+        "fi": 7.3,
+        "avs": 6.2,
+        "lega": 5.3,
+        "azione": 2.8,
+        "iv": 2.5,
+        "europa": 1.6
+      },
+      "comparable": true,
+      "source": "https://www.termometropolitico.it/1634494_sondaggi-politici-tp-09-10-2026.html",
+      "source_kind": "fonte primaria",
+      "fieldwork": null,
+      "method": null,
+      "sample": null,
+      "note": "Valori esplicitati nel testo originale. Noi Moderati, periodo, metodo e campione non verificati: nessuna imputazione.",
+      "extra_values": {
+        "Altri": 4.3
+      }
+    },
+    {
+      "id": "only-2026-10-02",
+      "institute": "only",
+      "published": "2026-10-02",
+      "values": {
+        "fdi": 27.3,
+        "pd": 19.7,
+        "m5s": 11.6,
+        "fn": 7,
+        "fi": 7.5,
+        "avs": 6.7,
+        "lega": 6.6,
+        "azione": 3.2,
+        "iv": 2.3,
+        "europa": 1.8,
+        "nm": 1
+      },
+      "comparable": true,
+      "source": "https://sondaggibidimedia.com/sondaggio-only-numbers-2-ottobre-2026/",
+      "source_kind": "BiDiMedia: Only Numbers / Realpolitik",
+      "fieldwork": [
+        "2026-09-30",
+        "2026-10-01"
+      ],
+      "method": "CAWI",
+      "sample": 800,
+      "corroborating_source": "https://www.termometropolitico.it/1634505_sondaggi-elettorali-campo-largo-only-numbers.html",
+      "note": "Rilevazione indicata come 2 ottobre da BiDiMedia; le pubblicazioni dell’8 e 9 ottobre sono riprese dello stesso sondaggio. Only Numbers e Realpolitik restano un unico istituto."
+    },
+    {
+      "id": "lab21-2026-10-03",
+      "institute": "lab21",
+      "published": "2026-10-03",
+      "values": {
+        "fdi": 28.2,
+        "pd": 20.2,
+        "m5s": 13.2,
+        "fn": 8.4,
+        "fi": 6.9,
+        "avs": 5.6,
+        "lega": 5.4,
+        "azione": 2.8
+      },
+      "comparable": true,
+      "source": "https://www.affaritaliani.it/politica/sondaggi-campo-largo-davanti-al-centrodestra-tra-i-sindaci-vola-basile-salis-e-sala-in-calo.html",
+      "source_kind": "committente Affaritaliani: monitor Lab21 n. 316",
+      "fieldwork": null,
+      "method": null,
+      "sample": null,
+      "note": "Solo valori esplicitati nel testo del committente. Liste mancanti e metadati non disponibili non sono ricostruiti."
+    },
+    {
+      "id": "swg-2026-10-05",
+      "institute": "swg",
+      "published": "2026-10-05",
+      "values": {
+        "fdi": 27.7,
+        "pd": 20.7,
+        "m5s": 12.6,
+        "fn": 7.8,
+        "fi": 7.1,
+        "avs": 6.6,
+        "lega": 5.2,
+        "azione": 3.1,
+        "iv": 2.3,
+        "europa": 1.6,
+        "nm": 1
+      },
+      "comparable": true,
+      "source": "https://tg.la7.it/sondaggi/sondaggio-politico-5-ottobre-voto-05-10-2026-263713",
+      "source_kind": "fonte primaria",
+      "fieldwork": [
+        "2026-09-30",
+        "2026-10-05"
+      ],
+      "method": "CATI/CAMI/CAWI",
+      "sample": 1200,
+      "nonresponse": {
+        "label": "Non si esprime",
+        "value": 29
+      },
+      "extra_values": {
+        "Avanti PSI": 1,
+        "Altre liste": 3.3
+      },
+      "note": "Percentuali e metadati verificati sulle due tavole originali SWG/TG La7. Non rispondenti: 4.231; margine massimo dichiarato 2,8 punti al 95%."
+    },
+    {
+      "id": "cluster17-2026-10-05",
+      "institute": "cluster17",
+      "published": "2026-10-05",
+      "values": {
+        "fdi": 25.9,
+        "pd": 19.1,
+        "m5s": 13.6,
+        "fn": 9.2,
+        "fi": 7,
+        "avs": 7.5,
+        "lega": 4.5,
+        "azione": 4.5,
+        "iv": 2,
+        "europa": 2,
+        "nm": 1.3
+      },
+      "comparable": true,
+      "source": "https://www.ilfattoquotidiano.it/in-edicola/articoli/2026/10/05/il-sondaggio-cluster-17-per-il-fatto-il-campo-largo-puo-vincere-la-destra-sempre-ostaggio-dei-voti-di-vannacci/8527450/",
+      "source_kind": "committente Il Fatto Quotidiano: prima pubblicazione",
+      "fieldwork": [
+        "2026-09-21",
+        "2026-09-24"
+      ],
+      "method": "CAWI",
+      "sample": 1580,
+      "primary_source": "https://cluster17.com/wp-content/uploads/2026/10/Intenzioni_vote_Italia_Cluster17_FR.pdf",
+      "extra_values": {
+        "Sud Chiama Nord": 0.5,
+        "Altri": 2.9
+      },
+      "note": "Valori e metodologia dal rapporto originale Cluster17. Il sito dell’istituto ripubblica il 6 ottobre il sondaggio del Fatto del 5 ottobre. Margine dichiarato: 1,1–2,5 punti secondo la percentuale."
+    },
+    {
+      "id": "noto-2026-10-06",
+      "institute": "noto",
+      "published": "2026-10-06",
+      "values": {
+        "fdi": 28,
+        "pd": 19.5,
+        "m5s": 12.5,
+        "fn": 6.7,
+        "fi": 6.9,
+        "avs": 6.5,
+        "lega": 6,
+        "nm": 1.4
+      },
+      "comparable": true,
+      "source": "https://www.adnkronos.com/politica/sondaggio-politico-oggi-intenzioni-di-voto_pRTDn3CtYxTREdwfPmo85",
+      "source_kind": "agenzia Adnkronos: Porta a Porta",
+      "fieldwork": null,
+      "method": null,
+      "sample": null,
+      "turnout": {
+        "label": "Affluenza stimata",
+        "value": 62
+      },
+      "extra_values": {
+        "Azione + Libdem + Spazio": 4,
+        "Italia Viva + Casa Riformista + Europa": 2.5
+      },
+      "note": "Prima diffusione a Porta a Porta il 6 ottobre, documentata dall’agenzia il 7 ottobre. Aggregazioni di liste conservate separatamente: non attribuite ai singoli partiti e non incluse nelle loro medie."
+    },
+    {
+      "id": "quorum-2026-10-08",
+      "institute": "quorum",
+      "published": "2026-10-08",
+      "values": {
+        "fdi": 27,
+        "pd": 20.4,
+        "m5s": 13.5,
+        "fn": 7.8,
+        "fi": 7.4,
+        "avs": 5.8,
+        "lega": 4.8,
+        "azione": 3.3,
+        "iv": 2.5,
+        "europa": 1.5,
+        "nm": 1
+      },
+      "comparable": true,
+      "source": "https://tg24.sky.it/politica/2026/10/08/sondaggio-nuova-legge-elettorale",
+      "source_kind": "committente Sky TG24: Quorum–YouTrend",
+      "fieldwork": [
+        "2026-10-05",
+        "2026-10-06"
+      ],
+      "method": "CAWI",
+      "sample": 805,
+      "nonresponse": {
+        "label": "Astenuti e indecisi",
+        "value": 35.1
+      },
+      "extra_values": {
+        "Ora": 1.2,
+        "Partito Liberaldemocratico": 1.1
+      },
+      "note": "Margine di errore dichiarato ±3,5 punti al 95%. Le liste aggiuntive restano separate dalle 11 medie per partito."
+    },
+    {
+      "id": "eumetra-2026-10-09",
+      "institute": "eumetra",
+      "published": "2026-10-09",
+      "values": {
+        "fn": 7.6
+      },
+      "comparable": false,
+      "source": "https://www.la7.it/piazzapulita/video/sondaggio-eumetra-vannacci-scende-al-76-damilano-massima-incertezza-08-10-2026-660917",
+      "source_kind": "fonte primaria La7 / Piazzapulita",
+      "fieldwork": null,
+      "method": null,
+      "sample": null,
+      "exclusion_reason": "tavola completa e data di diffusione da confermare",
+      "note": "La pagina reca 9 ottobre, l’URL 8 ottobre. FN 7,6% è esplicito; il testo riporta per altri partiti valori e variazioni non coerenti con la rilevazione precedente. Nessuna integrazione nella media finché non è verificata la tavola completa."
     }
-  ]
+  ],
+  "verification_note": "Controllo del 9 ottobre 2026: nuove fonti e lacune indicate nelle schede. Dati ereditati dall’archivio identificati separatamente; le ripubblicazioni non creano nuovi sondaggi."
 }

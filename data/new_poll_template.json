@@ -1,25 +1,16 @@
 {
   "id": "istituto-YYYY-MM-DD",
-  "institute": "Nome istituto",
+  "institute": "chiave istituto del feed",
   "published": "YYYY-MM-DD",
+  "values": {},
+  "comparable": true,
+  "source": "https://...",
+  "source_kind": "fonte primaria / secondaria",
   "fieldwork": null,
   "sample": null,
   "method": null,
-  "parties": {
-    "FdI": null,
-    "PD": null,
-    "M5S": null,
-    "FN": null,
-    "FI": null,
-    "AVS": null,
-    "Lega": null,
-    "Azione": null,
-    "IV": null,
-    "+Europa": null,
-    "NM": null
-  },
   "turnout": null,
-  "non_response_label": null,
-  "non_response_value": null,
-  "source": "https://..."
+  "nonresponse": null,
+  "extra_values": {},
+  "note": ""
 }
