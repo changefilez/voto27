@@ -1,5 +1,5 @@
 {
-  "verified_on": "2026-10-09",
+  "verified_on": "2026-10-10",
   "polls": [
     {
       "id": "bidimedia-2026-08-24",
@@ -1029,7 +1029,64 @@
       "sample": null,
       "exclusion_reason": "tavola completa e data di diffusione da confermare",
       "note": "La pagina reca 9 ottobre, l’URL 8 ottobre. FN 7,6% è esplicito; il testo riporta per altri partiti valori e variazioni non coerenti con la rilevazione precedente. Nessuna integrazione nella media finché non è verificata la tavola completa."
+    },
+    {
+      "id": "lab21-2026-10-09",
+      "institute": "lab21",
+      "published": "2026-10-09",
+      "values": {
+        "fdi": 28.4,
+        "pd": 20,
+        "m5s": 13.4,
+        "fn": 8.2,
+        "fi": 7,
+        "lega": 5.5,
+        "azione": 2.9,
+        "nm": 0.8
+      },
+      "comparable": true,
+      "source": "https://www.affaritaliani.it/politica/sondaggio-con-la-nuova-legge-elettorale-meloni-supera-il-campo-largo-e-vannacci-ecco-la-prima-rilevazione-dopo-il-voto.html",
+      "source_kind": "committente Affaritaliani: Lab21",
+      "fieldwork": null,
+      "method": null,
+      "sample": null,
+      "extra_values": {
+        "Sud Chiama Nord": 1.6
+      },
+      "note": "Solo percentuali nazionali dei singoli partiti esplicitate dal committente. AVS, Italia Viva e +Europa non pubblicati nel testo: nessun recupero dalla scheda precedente. Scenari di coalizione e simulazioni dei seggi esclusi dalle medie. Periodo, metodo e campione non verificati."
+    },
+    {
+      "id": "emg-2026-10-08",
+      "institute": "emg",
+      "published": "2026-10-08",
+      "values": {
+        "fdi": 25.4,
+        "pd": 20.6,
+        "m5s": 11.8,
+        "fn": 6.5,
+        "fi": 7.9,
+        "avs": 5.8,
+        "lega": 7.5,
+        "azione": 2.6,
+        "iv": 2.5,
+        "europa": 1.8,
+        "nm": 1.7
+      },
+      "comparable": true,
+      "source": "https://www.adnkronos.com/politica/sondaggio-tg3-intenzioni-voto-elezioni_4vEatFMX8c1Vc5BK5clW75",
+      "source_kind": "agenzia Adnkronos: EMG per TG3 Linea Notte",
+      "fieldwork": null,
+      "method": null,
+      "sample": null,
+      "turnout": {
+        "label": "Affluenza stimata",
+        "value": 64
+      },
+      "extra_values": {
+        "Partito Liberaldemocratico": 1.7
+      },
+      "note": "Diffusione dell’8 ottobre documentata da Adnkronos alle 21:41. Fonte audiovisiva originale non recuperata; periodo, metodo e campione non verificati. Le quote delle coalizioni riportate con quesito distinto restano escluse dalle medie VOTO27."
     }
   ],
-  "verification_note": "Controllo del 9 ottobre 2026: nuove fonti e lacune indicate nelle schede. Dati ereditati dall’archivio identificati separatamente; le ripubblicazioni non creano nuovi sondaggi."
+  "verification_note": "Controllo del 10 ottobre 2026: aggiunte Lab21 del 9 ottobre ed EMG dell’8 ottobre. Registro ufficiale temporaneamente non consultabile. Only Numbers del 23–24 settembre: fonte originale dei valori ancora da verificare; nessuna imputazione. Gli scenari Piepoli con leader diversi non sono assimilati alle intenzioni di voto ordinarie."
 }

@@ -1,4 +1,4 @@
-const CACHE = 'voto27-v1-6b54729a7929';
+const CACHE = 'voto27-v1-c05e941f4fa7';
 const ASSETS = ['/', '/index.html', '/manifest.webmanifest', '/icons/voto27-icon.svg'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)));
