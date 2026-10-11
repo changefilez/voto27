@@ -14,7 +14,7 @@ PARTIES = dict(zip('fdi pd m5s fn fi avs lega azione iv europa nm'.split(),
 NAMES = {'swg':'SWG','ipsos':'Ipsos Doxa','quorum':'Quorum–YouTrend','piepoli':'Istituto Piepoli',
          'only':'Only Numbers','emg':'EMG Different','eumetra':'Eumetra','termometro':'Termometro Politico',
          'tecne':'Tecnè','bidimedia':'BiDiMedia','winpoll':'Winpoll','noto':'Noto','ixe':'Ixè',
-         'cluster17':'Cluster17','lab21':'Lab21'}
+         'cluster17':'Cluster17','lab21':'Lab21','piave':'Piave'}
 LEFT = ['pd','m5s','avs','iv','europa']
 RIGHT = ['fdi','lega','fn','fi','nm']
 ROOT = Path(__file__).resolve().parents[1]

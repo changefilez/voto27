@@ -1,5 +1,5 @@
 {
-  "verified_on": "2026-10-10",
+  "verified_on": "2026-10-11",
   "polls": [
     {
       "id": "bidimedia-2026-08-24",
@@ -1086,7 +1086,32 @@
         "Partito Liberaldemocratico": 1.7
       },
       "note": "Diffusione dell’8 ottobre documentata da Adnkronos alle 21:41. Fonte audiovisiva originale non recuperata; periodo, metodo e campione non verificati. Le quote delle coalizioni riportate con quesito distinto restano escluse dalle medie VOTO27."
+    },
+    {
+      "id": "piave-2026-10-10",
+      "institute": "piave",
+      "published": "2026-10-10",
+      "values": {
+        "fdi": 26.6,
+        "pd": 21,
+        "m5s": 12.6,
+        "fn": 7.7,
+        "fi": 7.3,
+        "avs": 6.4,
+        "lega": 5.6,
+        "azione": 3.4,
+        "iv": 2.5,
+        "europa": 1.5,
+        "nm": 1.1
+      },
+      "comparable": true,
+      "source": "https://www.fanpage.it/politica/sondaggi-politici-campo-largo-in-vantaggio-anche-con-lo-stabilicum-conte-avanti-su-schlein-alle-primarie/",
+      "source_kind": "committente Fanpage.it: Piave",
+      "fieldwork": null,
+      "method": null,
+      "sample": null,
+      "note": "Presentato il 10 ottobre al Rumore Festival di Fanpage.it. Tutti gli undici valori nazionali sono esplicitati dal committente. Periodo delle interviste, metodo e campione non pubblicati: restano indicati come non verificati. Primarie, giudizi sui leader e simulazioni dei seggi sono quesiti distinti e non entrano nelle medie VOTO27."
     }
   ],
-  "verification_note": "Controllo del 10 ottobre 2026: aggiunte Lab21 del 9 ottobre ed EMG dell’8 ottobre. Registro ufficiale temporaneamente non consultabile. Only Numbers del 23–24 settembre: fonte originale dei valori ancora da verificare; nessuna imputazione. Gli scenari Piepoli con leader diversi non sono assimilati alle intenzioni di voto ordinarie."
+  "verification_note": "Controllo dell’11 ottobre 2026: aggiunto Piave per Fanpage.it, presentato il 10 ottobre. Periodo, metodo e campione non pubblicati restano espliciti. Registro ufficiale temporaneamente non consultabile. Only Numbers del 23–24 settembre: fonte originale dei valori ancora da verificare; nessuna imputazione."
 }
