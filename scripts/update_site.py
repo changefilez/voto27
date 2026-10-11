@@ -117,6 +117,7 @@ for p in sorted((p for p in polls if p['source'] or p['id'] in selected),key=lam
 recent += '<p class="tiny">'+escape(data.get('verification_note','Fonti e copertura dichiarate per ciascuna scheda; i metadati non verificati restano espliciti.'))+'</p>'
 baseline = series[0]
 movement = card(f'<div class="kicker">Movimento • {dt(baseline["date"])} – {dt(as_of)}</div><h2>Variazione dello scenario</h2><p>Centrosinistra: {fmt(left-baseline["left"])} punti. Centrodestra: {fmt(right-baseline["right"])} punti.</p><p class="tiny">Confronto fra due snapshot reali; la composizione degli istituti cambia nel periodo. Il confronto trimestrale non viene esteso senza i dati storici necessari.</p>')
+pole += "<p class=\"pole-note\" id=\"scn-alliance-note\"><b>Sud chiama Nord — Cateno De Luca:</b> collocato nel quadro politico del centrodestra nazionale dopo l’accordo per le politiche 2027 annunciato da De Luca il 9 ottobre 2026. L’intesa non si estende automaticamente alla Sicilia. Nei sondaggi del feed non è disponibile un valore separato verificato: nessuna percentuale aggiunta ai poli e nessuna modifica allo storico. L’1,5% dichiarato dal leader non è utilizzato come sondaggio. <a href=\"https://www.ilfoglio.it/politica/2026/10/09/news/fratelli-di-cateno-correro-con-meloni-per-fermare-vannacci-parla-il-leader-di-sud-chiama-nord--409967\" target=\"_blank\" rel=\"noopener noreferrer\">Fonte: intervista al Foglio, 9 ottobre 2026</a>. Verifica: 11 ottobre 2026.</p>"
 today = '<main id="oggi" class="page">'+intro+card(pole)+card(intents)+'<section class="card" id="rilevazioni-recenti">'+recent+'</section>'+movement+'</main>'
 
 def chart(keys,labels,colors,low,high):
@@ -145,6 +146,7 @@ trend += card('<h2>Altri partiti rilevati</h2>'+separate_charts(['azione','iv','
 trend += card('<h2>Snapshot verificabili</h2><div style="overflow-x:auto"><table><thead><tr><th>Data</th><th>Istituti</th><th>CSX</th><th>CDX</th></tr></thead><tbody>'+''.join(f'<tr><td>{dt(s["date"])}</td><td>{len(s["selected_polls"])}</td><td>{fmt(s["left"])}%</td><td>{fmt(s["right"])}%</td></tr>' for s in series)+'</tbody></table></div><p class="tiny">Storico precedente: i grafici della versione del 15 settembre sono conservati nel repository, ma non prolungati perché mancano nel feed i dati di origine per ricostruirli. Nessun punto fittizio è aggiunto. Ogni punto pubblicato supera la soglia di almeno tre istituti e nessuno oltre il 60% per ogni partito.</p>')+'</main>'
 
 h=(ROOT/'index.html').read_text()
+h=h.replace('FdI · Lega · Futuro Nazionale · Forza Italia · Noi Moderati</span>', 'FdI · Lega · Futuro Nazionale · Forza Italia · Noi Moderati · Sud chiama Nord (accordo nazionale annunciato; dato separato non disponibile)</span>')
 for key,value in [('oggi',today),('trend',trend)]:
     h,n=re.subn(r'<main id="'+key+r'".*?</main>',lambda m:value,h,flags=re.S); assert n==1
 # Generate every archive entry, radio and page from the same feed as the averages.
@@ -218,3 +220,4 @@ sw=(ROOT/'sw.js').read_text()
 sw=re.sub(r"const CACHE = '[^']+';", "const CACHE = 'voto27-v1-"+hashlib.sha256(h.encode()).hexdigest()[:12]+"';", sw)
 (ROOT/'sw.js').write_text(sw)
 print(json.dumps({'as_of':as_of,'means':means,'left':left,'right':right,'polls':len(polls),'institutes':len(current['selected_polls']),'snapshots':len(series)},ensure_ascii=False,indent=2))
+
