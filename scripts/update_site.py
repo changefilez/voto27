@@ -68,11 +68,11 @@ def short_dt(s):
     return f'{d.day} {MONTHS[d.month-1][:3]}'
 def card(content): return '<section class="card">'+content+'</section>'
 means = current['parties']; left=current['left']; right=current['right']; remainder=100-left-right
-intro = card(f'<div class="kicker">Media VOTO27 • {dt(as_of)}</div><h1>Oggi</h1>'
+intro = card(f'<div class="kicker">VOTO27 • Aggiornamento del {dt(data["verified_on"])}</div><h1>Oggi</h1>'
     f'<p class="sub">Ultima rilevazione comparabile per ciascuno dei {len(current["selected_polls"])} istituti nella finestra di 42 giorni. Peso exp(−giorni/21). Ogni partito utilizza soltanto valori disponibili.</p>'
     f'<div class="soft-stat-grid"><div class="soft-stat blue"><div class="lab">Primo partito</div><div class="stat-name">Fratelli d’Italia</div><div class="num">{fmt(means["fdi"])}%</div></div>'
     f'<div class="soft-stat warm"><div class="lab">Data effettiva della media</div><div class="stat-name">Ultimo dato incluso</div><div class="num">{short_dt(as_of)}</div></div></div>'
-    f'<p class="tiny">Verifica delle fonti e aggiornamento delle schede: {dt(data["verified_on"])}. La data corrente nell’intestazione non è la data delle medie.</p>')
+    f'<p class="tiny">Verifica delle fonti e aggiornamento delle schede: {dt(data["verified_on"])}. La media utilizza sondaggi pubblicati fino al {dt(as_of)}.</p>')
 pole = '<div class="kicker">Scenario bipolare VOTO27</div><h2>Rapporto tra i due poli</h2><p class="sub">Somma delle medie per partito. Copertura diversa tra partiti: non è un quesito sulle coalizioni né una previsione elettorale.</p><div class="poles-summary">'
 for name, keys, value, cls in [('Sinistra / centrosinistra',LEFT,left,'left'),('Destra / centrodestra',RIGHT,right,'right')]:
     pole += f'<div class="pole-box pole-{cls}"><span class="pole-label">{name}</span><strong>{fmt(value)}%</strong><div class="pole-members">'+ ' · '.join(PARTIES[k] for k in keys)+'</div></div>'
