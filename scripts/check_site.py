@@ -50,6 +50,8 @@ assert nav.circles == 13 * len(derived['snapshots']), 'Missing chart points'
 
 # Recompute from original observations, independently of the generated summaries.
 for snapshot in derived['snapshots']:
+    assert math.isclose(snapshot['right'], sum(snapshot['parties'].get(k, 0) for k in ['fdi', 'lega', 'fi', 'nm']), abs_tol=1e-12)
+    assert math.isclose(snapshot['left'], sum(snapshot['parties'].get(k, 0) for k in ['pd', 'm5s', 'avs', 'iv', 'europa']), abs_tol=1e-12)
     day = date.fromisoformat(snapshot['date'])
     eligible = [p for p in feed['polls'] if p['comparable']
                 and 0 <= (day - date.fromisoformat(p['published'])).days <= 42]

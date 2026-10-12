@@ -16,7 +16,7 @@ NAMES = {'swg':'SWG','ipsos':'Ipsos Doxa','quorum':'Quorum–YouTrend','piepoli'
          'tecne':'Tecnè','bidimedia':'BiDiMedia','winpoll':'Winpoll','noto':'Noto','ixe':'Ixè',
          'cluster17':'Cluster17','lab21':'Lab21','piave':'Piave'}
 LEFT = ['pd','m5s','avs','iv','europa']
-RIGHT = ['fdi','lega','fn','fi','nm']
+RIGHT = ['fdi','lega','fi','nm']
 ROOT = Path(__file__).resolve().parents[1]
 data = json.loads((ROOT/'data/polls.json').read_text())
 polls = data['polls']
@@ -77,7 +77,8 @@ pole = '<div class="kicker">Scenario bipolare VOTO27</div><h2>Rapporto tra i due
 for name, keys, value, cls in [('Sinistra / centrosinistra',LEFT,left,'left'),('Destra / centrodestra',RIGHT,right,'right')]:
     pole += f'<div class="pole-box pole-{cls}"><span class="pole-label">{name}</span><strong>{fmt(value)}%</strong><div class="pole-members">'+ ' · '.join(PARTIES[k] for k in keys)+'</div></div>'
 pole += f'</div><div class="balance"><div class="balance-left" style="width:{100*left/(left+right):.2f}%"></div><div class="balance-right" style="width:{100*right/(left+right):.2f}%"></div></div><div class="balance-labels"><span>{fmt(left)}%</span><span>distacco {fmt(abs(right-left))} punti</span><span>{fmt(right)}%</span></div>'
-pole += f'<div class="unassigned-chip"><span>Residuo non assegnato</span><strong>{fmt(remainder)}%</strong></div><p class="pole-note">Residuo aritmetico 100 meno i poli, non una media autonoma di “Altri”. Include Azione ({fmt(means["azione"])}%) e liste non attribuite. Nessuna conversione di indecisi o non risposta in astensione.</p>'
+pole += f'<div class="unassigned-chip"><span>Residuo non assegnato</span><strong>{fmt(remainder)}%</strong></div><p class="pole-note">Residuo aritmetico 100 meno i poli, non una media autonoma di “Altri”. Include Futuro Nazionale ({fmt(means["fn"])}%), Azione ({fmt(means["azione"])}%) e liste non attribuite. Futuro Nazionale e Azione sono valutati separatamente, fuori da entrambi i poli. Nessuna conversione di indecisi o non risposta in astensione.</p>'
+pole += '<div class="soft-stat-grid">'+''.join(f'<div class="soft-stat"><div class="lab">Fuori dai poli</div><div class="stat-name">{PARTIES[k]}</div><div class="num">{fmt(means[k])}%</div></div>' for k in ['fn','azione'])+'</div>'
 intents = f'<div class="kicker">Media ponderata</div><h2>Intenzioni di voto</h2><time datetime="{as_of}">{dt(as_of)}</time>'
 for k,v in sorted(means.items(),key=lambda x:-x[1]):
     names = ', '.join(NAMES[p['institute']] for p in polls if p['id'] in current['coverage'][k])
@@ -137,7 +138,7 @@ def chart(keys,labels,colors,low,high):
     svg+=f'<text x="48" y="258" fill="#233044" font-size="14">{short_dt(start.isoformat())}</text><text x="515" y="258" fill="#233044" font-size="14">{short_dt(end.isoformat())}</text></svg>'
     return svg+'<p>'+ ' · '.join(f'{label}: {fmt(current[key] if key in ["left","right"] else means[key])}%' for key,label in zip(keys,labels))+'</p>'
 trend = '<main id="trend" class="page">'+card(f'<div class="kicker">Snapshot v1 • {dt(as_of)}</div><h1>Trend</h1><p class="sub">Un punto per ogni data con nuovi dati disponibili; una sola rilevazione per istituto nei 42 giorni precedenti. Le linee collegano snapshot, non stime giornaliere.</p>')
-trend += card('<h2>I due poli</h2>'+chart(['left','right'],['Centrosinistra','Centrodestra'],['#81b9f0','#f0aa86'],40,55))
+trend += card('<h2>I due poli</h2><p class="tiny">Futuro Nazionale e Azione esclusi da entrambi i poli in tutta la serie, ricalcolata con la stessa composizione.</p>'+chart(['left','right'],['Centrosinistra','Centrodestra'],['#81b9f0','#f0aa86'],35,55))
 trend += card('<h2>Primi tre partiti</h2>'+chart(['fdi','pd','m5s'],['FdI','PD','M5S'],['#8eafe3','#ee92b2','#e4c865'],10,30))
 def separate_charts(keys,labels,colors,low,high):
     return '<p class="tiny">Un grafico per partito, tutti con la stessa scala: '+str(low)+'–'+str(high)+'%. Le percentuali non sono spostate per separare le linee.</p><div class="party-trend-grid">'+''.join('<div class="party-trend-panel"><h3>'+label+'</h3>'+chart([key],[label],[color],low,high)+'</div>' for key,label,color in zip(keys,labels,colors))+'</div>'
@@ -187,7 +188,7 @@ h=re.sub(r'<section class="card method-card"><h3>9\..*?</section>',card('<h3>9. 
 h,n=re.subn(r'PASS</b> \(\d+ sondaggi(?: nel feed)?\)',f'PASS</b> ({len(polls)} sondaggi nel feed)',h);assert n==1
 config=json.loads((ROOT/'data/config.json').read_text())
 config.update(data_last_update=as_of,sources_verified_on=data['verified_on'],cards_updated_on=data['verified_on'])
-config['aggregation'].update(current_lookback_days=42,current_one_poll_per_institute=True,date_basis='publication')
+config['aggregation'].update(future_national_unassigned=True,current_lookback_days=42,current_one_poll_per_institute=True,date_basis='publication')
 (ROOT/'data/config.json').write_text(json.dumps(config,ensure_ascii=False,indent=2)+'\n')
 h=re.sub(r'const CONFIG = .*?;',lambda m:'const CONFIG = '+json.dumps(config,ensure_ascii=False)+';',h)
 h=h.replace('.party:hover{background:#fafbfd}', '')
