@@ -203,6 +203,13 @@ PALETTE = {
     'emg': ('fff0e6','d6a182','78472c'),
     'only': ('eef0fc','97a4ce','414f7b'),
     'ixe': ('f4ecf5','ba96bf','67446d'),
+    'tecne': ('e9f4f4','7fb5b4','285c5b'),
+    'bidimedia': ('f7eee6','cda887','6d4528'),
+    'winpoll': ('edf2e6','9caf78','465b27'),
+    'noto': ('f8eaf3','cc91b2','713653'),
+    'cluster17': ('e9f0fa','86a7d0','31557d'),
+    'lab21': ('fff0dc','d6a45d','704b18'),
+    'piave': ('e8f5ed','80b796','285e3d'),
 }
 palette_css = ''.join('.verified-poll[data-institute="'+key+'"]{--poll-bg:#'+bg+';--poll-accent:#'+accent+';--poll-ink:#'+ink+'}' for key,(bg,accent,ink) in PALETTE.items())
 party_css = '#oggi .party summary,#oggi .party summary .pname,#oggi .party summary b{color:#f4f6f8 !important}#oggi .party[open]{background:#1b2631}#oggi .party .party-detail{color:#c5ccd5 !important}#oggi .party summary:focus-visible{outline:2px solid #9cc4e5;outline-offset:2px;border-radius:12px}#oggi .party summary .pname::after{content:"⌄";font-size:14px;color:#a9c9e7;margin-left:4px}#oggi .party[open] summary .pname::after{content:"⌃"}@media(hover:hover) and (pointer:fine){#oggi .party:hover{background:#1b2631}}'
@@ -220,4 +227,5 @@ sw=(ROOT/'sw.js').read_text()
 sw=re.sub(r"const CACHE = '[^']+';", "const CACHE = 'voto27-v1-"+hashlib.sha256(h.encode()).hexdigest()[:12]+"';", sw)
 (ROOT/'sw.js').write_text(sw)
 print(json.dumps({'as_of':as_of,'means':means,'left':left,'right':right,'polls':len(polls),'institutes':len(current['selected_polls']),'snapshots':len(series)},ensure_ascii=False,indent=2))
+
 

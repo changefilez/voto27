@@ -1,5 +1,5 @@
 {
-  "verified_on": "2026-10-11",
+  "verified_on": "2026-10-12",
   "polls": [
     {
       "id": "bidimedia-2026-08-24",
@@ -1111,7 +1111,71 @@
       "method": null,
       "sample": null,
       "note": "Presentato il 10 ottobre al Rumore Festival di Fanpage.it. Tutti gli undici valori nazionali sono esplicitati dal committente. Periodo delle interviste, metodo e campione non pubblicati: restano indicati come non verificati. Primarie, giudizi sui leader e simulazioni dei seggi sono quesiti distinti e non entrano nelle medie VOTO27."
+    },
+    {
+      "id": "piepoli-2026-10-09",
+      "institute": "piepoli",
+      "published": "2026-10-09",
+      "values": {
+        "fdi": 27.5,
+        "pd": 20,
+        "m5s": 12.5,
+        "fn": 7,
+        "fi": 7.5,
+        "avs": 7,
+        "lega": 5.5,
+        "azione": 3,
+        "iv": 2.5,
+        "europa": 1.5,
+        "nm": 1.5
+      },
+      "comparable": true,
+      "source": "https://www.la7.it/omnibus/video/sondaggi-lucio-caracciolo-il-centrodestra-ha-un-leader-il-campo-largo-ne-ha-troppi-09-10-2026-660999",
+      "source_kind": "fonte primaria La7 / Omnibus: Piepoli",
+      "fieldwork": [
+        "2026-10-05",
+        "2026-10-05"
+      ],
+      "method": "CATI/CAMI/CAWI",
+      "sample": 519,
+      "nonresponse": {
+        "label": "Indecisi-astenuti",
+        "value": 30
+      },
+      "extra_values": {
+        "Sud Chiama Nord": 1.5,
+        "Partito Liberaldemocratico": 1.5,
+        "Ora!": 0.5,
+        "Altri": 1
+      },
+      "corroborating_source": "https://www.sondaggipoliticoelettorali.it/ListaSondaggi.aspx?st=SONDAGGI",
+      "note": "Tavola completa e metadati verificati nel registro ufficiale: diffusione del 9 ottobre, interviste il 5 ottobre, 366 complete CATI/CAMI e 153 CAWI, margine ±4,30% al 95%. Le quote aggregate Centrodestra 42% e Campolargo 43,5% restano escluse dalle medie per partito."
+    },
+    {
+      "id": "only-2026-10-10",
+      "institute": "only",
+      "published": "2026-10-10",
+      "values": {
+        "fdi": 27.5,
+        "pd": 19.5,
+        "m5s": 11.7,
+        "fn": 7,
+        "fi": 7.5,
+        "avs": 6.8,
+        "lega": 6.2,
+        "azione": 3.3,
+        "iv": 2.3
+      },
+      "comparable": true,
+      "source": "https://mediasetinfinity.mediaset.it/video/realpolitik/sabato-10-ottobre_F314705801001701",
+      "source_kind": "committente RTI / Realpolitik: Only Numbers",
+      "fieldwork": null,
+      "method": null,
+      "sample": null,
+      "corroborating_source": "https://www.lidentita.it/ultimi-sondaggi-partiti-voto-vannacci/",
+      "note": "Diffusione nella puntata Realpolitik del 10 ottobre; i nove valori sono esplicitati dal riscontro editoriale dell’11 ottobre. +Europa e Noi Moderati non risultano pubblicati: nessun recupero dalla precedente scheda Only Numbers. Periodo, metodo e campione non ancora presenti nel registro ufficiale al controllo del 12 ottobre."
     }
   ],
-  "verification_note": "Controllo dell’11 ottobre 2026: aggiunto Piave per Fanpage.it, presentato il 10 ottobre. Periodo, metodo e campione non pubblicati restano espliciti. Registro ufficiale temporaneamente non consultabile. Only Numbers del 23–24 settembre: fonte originale dei valori ancora da verificare; nessuna imputazione."
+  "verification_note": "Controllo del 12 ottobre 2026: aggiunti Piepoli del 9 ottobre, verificato nel registro ufficiale con tavola e metadati completi, e Only Numbers / Realpolitik del 10 ottobre con i nove valori effettivamente pubblicati. +Europa e Noi Moderati mancanti nella nuova scheda Only Numbers non sono imputati. Only Numbers del 23–24 settembre: fonte originale dei valori ancora da verificare; nessuna imputazione."
 }
+
