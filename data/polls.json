@@ -1,5 +1,5 @@
 {
-  "verified_on": "2026-10-12",
+  "verified_on": "2026-10-13",
   "polls": [
     {
       "id": "bidimedia-2026-08-24",
@@ -1015,20 +1015,36 @@
       "note": "Margine di errore dichiarato ±3,5 punti al 95%. Le liste aggiuntive restano separate dalle 11 medie per partito."
     },
     {
-      "id": "eumetra-2026-10-09",
+      "id": "eumetra-2026-10-08",
       "institute": "eumetra",
-      "published": "2026-10-09",
+      "published": "2026-10-08",
       "values": {
-        "fn": 7.6
+        "fdi": 27.5,
+        "pd": 20.3,
+        "m5s": 12.6,
+        "fn": 7.6,
+        "fi": 7.4,
+        "avs": 6.5,
+        "lega": 5.7,
+        "azione": 3.2,
+        "iv": 2.2,
+        "europa": 1.8,
+        "nm": 1.1
       },
-      "comparable": false,
+      "comparable": true,
       "source": "https://www.la7.it/piazzapulita/video/sondaggio-eumetra-vannacci-scende-al-76-damilano-massima-incertezza-08-10-2026-660917",
       "source_kind": "fonte primaria La7 / Piazzapulita",
-      "fieldwork": null,
-      "method": null,
-      "sample": null,
-      "exclusion_reason": "tavola completa e data di diffusione da confermare",
-      "note": "La pagina reca 9 ottobre, l’URL 8 ottobre. FN 7,6% è esplicito; il testo riporta per altri partiti valori e variazioni non coerenti con la rilevazione precedente. Nessuna integrazione nella media finché non è verificata la tavola completa."
+      "fieldwork": [
+        "2026-10-06",
+        "2026-10-07"
+      ],
+      "method": "CAWI",
+      "sample": 800,
+      "extra_values": {
+        "Altri": 4.1
+      },
+      "corroborating_source": "https://sondaggibidimedia.com/sondaggio-eumetra-7-ottobre-2026/",
+      "note": "Scheda completata con la tavola integrale e la nota metodologica: popolazione maggiorenne nazionale, campione per quote, margine dichiarato ±4% al 95%. La data resta quella della diffusione originaria nella puntata Piazzapulita dell’8 ottobre; la pubblicazione successiva della tavola completa non crea una nuova rilevazione."
     },
     {
       "id": "lab21-2026-10-09",
@@ -1173,9 +1189,46 @@
       "method": null,
       "sample": null,
       "corroborating_source": "https://www.lidentita.it/ultimi-sondaggi-partiti-voto-vannacci/",
-      "note": "Diffusione nella puntata Realpolitik del 10 ottobre; i nove valori sono esplicitati dal riscontro editoriale dell’11 ottobre. +Europa e Noi Moderati non risultano pubblicati: nessun recupero dalla precedente scheda Only Numbers. Periodo, metodo e campione non ancora presenti nel registro ufficiale al controllo del 12 ottobre."
+      "note": "Diffusione nella puntata Realpolitik del 10 ottobre; i nove valori sono esplicitati dal riscontro editoriale dell’11 ottobre. +Europa e Noi Moderati non risultano pubblicati: nessun recupero dalla precedente scheda Only Numbers. Periodo, metodo e campione non ancora presenti nel registro ufficiale al controllo del 13 ottobre."
+    },
+    {
+      "id": "swg-2026-10-12",
+      "institute": "swg",
+      "published": "2026-10-12",
+      "values": {
+        "fdi": 27.7,
+        "pd": 20.4,
+        "m5s": 12.7,
+        "fn": 7.6,
+        "fi": 7.3,
+        "avs": 6.6,
+        "lega": 5.4,
+        "azione": 3.2,
+        "iv": 2.3,
+        "europa": 1.7,
+        "nm": 1.0
+      },
+      "comparable": true,
+      "source": "https://tg.la7.it/sondaggi/sondaggio-politico-12-ottobre-voto-12-10-2026-264123",
+      "source_kind": "committente TG La7: SWG",
+      "fieldwork": [
+        "2026-10-07",
+        "2026-10-12"
+      ],
+      "method": "CATI/CAMI/CAWI",
+      "sample": 1200,
+      "nonresponse": {
+        "label": "Non si esprime",
+        "value": 28
+      },
+      "extra_values": {
+        "Sud Chiama Nord": 1.0,
+        "Altre liste": 3.1
+      },
+      "note": "Valori e metadati letti nelle due tavole originali SWG pubblicate da TG La7. Campione stratificato di maggiorenni residenti in Italia; 4.273 non rispondenti e margine dichiarato ±2,8% al 95%. La voce «Non si esprime» resta separata e non è trattata come astensione."
     }
   ],
-  "verification_note": "Controllo del 12 ottobre 2026: aggiunti Piepoli del 9 ottobre, verificato nel registro ufficiale con tavola e metadati completi, e Only Numbers / Realpolitik del 10 ottobre con i nove valori effettivamente pubblicati. +Europa e Noi Moderati mancanti nella nuova scheda Only Numbers non sono imputati. Only Numbers del 23–24 settembre: fonte originale dei valori ancora da verificare; nessuna imputazione."
+  "verification_note": "Controllo del 13 ottobre 2026: aggiunto SWG del 12 ottobre con tavole e metadati originali completi; completata e resa utilizzabile la rilevazione Eumetra diffusa l’8 ottobre, senza cambiarne la data originaria. Le nuove schede non risultavano ancora pubblicate nel registro ufficiale al momento del controllo. Only Numbers del 23–24 settembre: fonte originale dei valori ancora da verificare; nessuna imputazione."
 }
+
 

@@ -1,4 +1,4 @@
-const CACHE = 'voto27-v1-c1038e49a5a1';
+const CACHE = 'voto27-v1-c2548aa064b8';
 const ASSETS = ['/', '/index.html', '/manifest.webmanifest', '/icons/voto27-icon.svg'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)));
@@ -18,5 +18,6 @@ self.addEventListener('fetch', event => {
     return response;
   }).catch(() => caches.match(event.request).then(cached => cached || (event.request.mode === 'navigate' ? caches.match('/index.html') : Response.error()))));
 });
+
 
 
