@@ -1,5 +1,5 @@
 {
-  "verified_on": "2026-10-13",
+  "verified_on": "2026-10-14",
   "polls": [
     {
       "id": "bidimedia-2026-08-24",
@@ -1056,20 +1056,28 @@
         "m5s": 13.4,
         "fn": 8.2,
         "fi": 7,
+        "avs": 5.6,
         "lega": 5.5,
         "azione": 2.9,
+        "iv": 2.9,
+        "europa": 1.2,
         "nm": 0.8
       },
       "comparable": true,
       "source": "https://www.affaritaliani.it/politica/sondaggio-con-la-nuova-legge-elettorale-meloni-supera-il-campo-largo-e-vannacci-ecco-la-prima-rilevazione-dopo-il-voto.html",
       "source_kind": "committente Affaritaliani: Lab21",
-      "fieldwork": null,
-      "method": null,
-      "sample": null,
+      "fieldwork": [
+        "2026-10-08",
+        "2026-10-09"
+      ],
+      "method": "CATI/CAMI/CAWI",
+      "sample": 754,
       "extra_values": {
-        "Sud Chiama Nord": 1.6
+        "Sud Chiama Nord": 1.6,
+        "Altri partiti": 2.5
       },
-      "note": "Solo percentuali nazionali dei singoli partiti esplicitate dal committente. AVS, Italia Viva e +Europa non pubblicati nel testo: nessun recupero dalla scheda precedente. Scenari di coalizione e simulazioni dei seggi esclusi dalle medie. Periodo, metodo e campione non verificati."
+      "corroborating_source": "https://www.sondaggipoliticoelettorali.it/ListaSondaggi.aspx?st=SONDAGGI",
+      "note": "Tavola e metadati completi verificati nel registro ufficiale: 754 interviste valide su 3.542 contatti, campione probabilistico con ponderazione sociodemografica, margine dichiarato ±3,0% al 95%. AVS, Italia Viva e +Europa, assenti nell’articolo del committente, sono integrati soltanto dopo il deposito ufficiale. Scenari di coalizione e simulazioni dei seggi restano esclusi dalle medie."
     },
     {
       "id": "emg-2026-10-08",
@@ -1091,17 +1099,22 @@
       "comparable": true,
       "source": "https://www.adnkronos.com/politica/sondaggio-tg3-intenzioni-voto-elezioni_4vEatFMX8c1Vc5BK5clW75",
       "source_kind": "agenzia Adnkronos: EMG per TG3 Linea Notte",
-      "fieldwork": null,
-      "method": null,
-      "sample": null,
+      "fieldwork": [
+        "2026-10-05",
+        "2026-10-06"
+      ],
+      "method": "rilevazione telematica su panel",
+      "sample": 1000,
       "turnout": {
         "label": "Affluenza stimata",
         "value": 64
       },
       "extra_values": {
-        "Partito Liberaldemocratico": 1.7
+        "Partito Liberaldemocratico": 1.7,
+        "Altra lista": 4.2
       },
-      "note": "Diffusione dell’8 ottobre documentata da Adnkronos alle 21:41. Fonte audiovisiva originale non recuperata; periodo, metodo e campione non verificati. Le quote delle coalizioni riportate con quesito distinto restano escluse dalle medie VOTO27."
+      "corroborating_source": "https://www.sondaggipoliticoelettorali.it/ListaSondaggi.aspx?st=SONDAGGI",
+      "note": "Diffusione dell’8 ottobre documentata da Adnkronos alle 21:41; metadati e valori completi verificati nel registro ufficiale. Campione rappresentativo della popolazione maggiorenne, 1.000 casi su 5.287 contatti, margine dichiarato ±3,1%. Le quote aggregate delle coalizioni restano escluse dalle medie VOTO27."
     },
     {
       "id": "piave-2026-10-10",
@@ -1123,10 +1136,17 @@
       "comparable": true,
       "source": "https://www.fanpage.it/politica/sondaggi-politici-campo-largo-in-vantaggio-anche-con-lo-stabilicum-conte-avanti-su-schlein-alle-primarie/",
       "source_kind": "committente Fanpage.it: Piave",
-      "fieldwork": null,
-      "method": null,
-      "sample": null,
-      "note": "Presentato il 10 ottobre al Rumore Festival di Fanpage.it. Tutti gli undici valori nazionali sono esplicitati dal committente. Periodo delle interviste, metodo e campione non pubblicati: restano indicati come non verificati. Primarie, giudizi sui leader e simulazioni dei seggi sono quesiti distinti e non entrano nelle medie VOTO27."
+      "fieldwork": [
+        "2026-10-05",
+        "2026-10-08"
+      ],
+      "method": "CAWI",
+      "sample": 800,
+      "extra_values": {
+        "Altre liste": 4.3
+      },
+      "corroborating_source": "https://www.sondaggipoliticoelettorali.it/ListaSondaggi.aspx?st=SONDAGGI",
+      "note": "Presentato il 10 ottobre al Rumore Festival di Fanpage.it. Valori e metadati verificati nel registro ufficiale: campione nazionale per quote, 800 interviste, margine dichiarato ±3,5% al 95%. Primarie, giudizi sui leader e simulazioni dei seggi sono quesiti distinti e non entrano nelle medie VOTO27."
     },
     {
       "id": "piepoli-2026-10-09",
@@ -1178,18 +1198,30 @@
         "fn": 7,
         "fi": 7.5,
         "avs": 6.8,
-        "lega": 6.2,
+        "lega": 6.3,
         "azione": 3.3,
-        "iv": 2.3
+        "iv": 2.3,
+        "europa": 2.0,
+        "nm": 1.1
       },
       "comparable": true,
       "source": "https://mediasetinfinity.mediaset.it/video/realpolitik/sabato-10-ottobre_F314705801001701",
       "source_kind": "committente RTI / Realpolitik: Only Numbers",
-      "fieldwork": null,
-      "method": null,
-      "sample": null,
-      "corroborating_source": "https://www.lidentita.it/ultimi-sondaggi-partiti-voto-vannacci/",
-      "note": "Diffusione nella puntata Realpolitik del 10 ottobre; i nove valori sono esplicitati dal riscontro editoriale dell’11 ottobre. +Europa e Noi Moderati non risultano pubblicati: nessun recupero dalla precedente scheda Only Numbers. Periodo, metodo e campione non ancora presenti nel registro ufficiale al controllo del 13 ottobre."
+      "fieldwork": [
+        "2026-10-07",
+        "2026-10-08"
+      ],
+      "method": "CAWI",
+      "sample": 800,
+      "nonresponse": {
+        "label": "Indecisi - astensione",
+        "value": 43.9
+      },
+      "extra_values": {
+        "Altri": 5.0
+      },
+      "corroborating_source": "https://www.sondaggipoliticoelettorali.it/ListaSondaggi.aspx?st=SONDAGGI",
+      "note": "Diffusione originaria nella puntata Realpolitik del 10 ottobre. Il deposito ufficiale completa la tavola con +Europa 2,0% e Noi Moderati 1,1% e corregge la Lega al 6,3%; 800 interviste CAWI, campione nazionale rappresentativo, margine dichiarato ±3,5% al 95%. La successiva registrazione non modifica la data originaria."
     },
     {
       "id": "swg-2026-10-12",
@@ -1228,7 +1260,8 @@
       "note": "Valori e metadati letti nelle due tavole originali SWG pubblicate da TG La7. Campione stratificato di maggiorenni residenti in Italia; 4.273 non rispondenti e margine dichiarato ±2,8% al 95%. La voce «Non si esprime» resta separata e non è trattata come astensione."
     }
   ],
-  "verification_note": "Controllo del 13 ottobre 2026: aggiunto SWG del 12 ottobre con tavole e metadati originali completi; completata e resa utilizzabile la rilevazione Eumetra diffusa l’8 ottobre, senza cambiarne la data originaria. Le nuove schede non risultavano ancora pubblicate nel registro ufficiale al momento del controllo. Only Numbers del 23–24 settembre: fonte originale dei valori ancora da verificare; nessuna imputazione."
+  "verification_note": "Controllo del 14 ottobre 2026: il registro ufficiale ha completato Only Numbers del 10 ottobre e Lab21 del 9 ottobre con i valori prima mancanti; per Only Numbers la Lega è corretta al 6,3%. Integrati anche periodo, metodo e campione ufficiali di Only Numbers, Lab21, Piave ed EMG, senza cambiare le date originarie di diffusione. Only Numbers del 23–24 settembre: fonte originale dei valori ancora da verificare; nessuna imputazione."
 }
+
 
 
