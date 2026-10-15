@@ -1,5 +1,5 @@
 {
-  "verified_on": "2026-10-14",
+  "verified_on": "2026-10-15",
   "polls": [
     {
       "id": "bidimedia-2026-08-24",
@@ -591,6 +591,42 @@
         "label": "Astenuti e indecisi",
         "value": 34.1
       }
+    },
+    {
+      "id": "only-2026-09-25",
+      "institute": "only",
+      "published": "2026-09-25",
+      "values": {
+        "fdi": 27.5,
+        "pd": 20.0,
+        "m5s": 11.8,
+        "fn": 7.0,
+        "fi": 7.8,
+        "avs": 6.5,
+        "lega": 6.5,
+        "azione": 3.2,
+        "iv": 2.1,
+        "europa": 2.3,
+        "nm": 1.0
+      },
+      "comparable": true,
+      "source": "https://mediasetinfinity.mediaset.it/video/realpolitik/venerdi-25-settembre_F314705801001001",
+      "source_kind": "committente RTI / Realpolitik: Only Numbers",
+      "fieldwork": [
+        "2026-09-23",
+        "2026-09-24"
+      ],
+      "method": "CAWI",
+      "sample": 800,
+      "nonresponse": {
+        "label": "Indecisi - astensione",
+        "value": 42.4
+      },
+      "extra_values": {
+        "Altri": 4.3
+      },
+      "corroborating_source": "https://www.sondaggipoliticoelettorali.it/ListaSondaggi.aspx?st=SONDAGGI",
+      "note": "Rilevazione diffusa da Realpolitik il 25 settembre e verificata nella scheda ufficiale: 800 interviste CAWI del 23–24 settembre, campione nazionale rappresentativo, margine dichiarato ±3,5% al 95%. Inserita con la data originaria di diffusione, senza trattare il successivo deposito del 29 settembre come nuova rilevazione."
     },
     {
       "id": "piepoli-2026-09-25",
@@ -1260,7 +1296,7 @@
       "note": "Valori e metadati letti nelle due tavole originali SWG pubblicate da TG La7. Campione stratificato di maggiorenni residenti in Italia; 4.273 non rispondenti e margine dichiarato ±2,8% al 95%. La voce «Non si esprime» resta separata e non è trattata come astensione."
     }
   ],
-  "verification_note": "Controllo del 14 ottobre 2026: il registro ufficiale ha completato Only Numbers del 10 ottobre e Lab21 del 9 ottobre con i valori prima mancanti; per Only Numbers la Lega è corretta al 6,3%. Integrati anche periodo, metodo e campione ufficiali di Only Numbers, Lab21, Piave ed EMG, senza cambiare le date originarie di diffusione. Only Numbers del 23–24 settembre: fonte originale dei valori ancora da verificare; nessuna imputazione."
+  "verification_note": "Controllo del 15 ottobre 2026: nessuna nuova rilevazione nazionale successiva allo SWG del 12 ottobre. Risolta la segnalazione Only Numbers del 23–24 settembre mediante la scheda ufficiale: diffusione originaria del 25 settembre, 800 interviste CAWI e tavola completa inserita senza duplicare il deposito del 29 settembre. Restano valide le integrazioni ufficiali del 14 ottobre per Only Numbers, Lab21, Piave ed EMG."
 }
 
 
