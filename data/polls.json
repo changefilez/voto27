@@ -1,5 +1,5 @@
 {
-  "verified_on": "2026-10-15",
+  "verified_on": "2026-10-20",
   "polls": [
     {
       "id": "bidimedia-2026-08-24",
@@ -1294,9 +1294,190 @@
         "Altre liste": 3.1
       },
       "note": "Valori e metadati letti nelle due tavole originali SWG pubblicate da TG La7. Campione stratificato di maggiorenni residenti in Italia; 4.273 non rispondenti e margine dichiarato ±2,8% al 95%. La voce «Non si esprime» resta separata e non è trattata come astensione."
+    },
+    {
+      "id": "eumetra-2026-10-15",
+      "institute": "eumetra",
+      "published": "2026-10-15",
+      "values": {
+        "fdi": 27.5,
+        "pd": 20.1,
+        "m5s": 12.7,
+        "fn": 7.3,
+        "fi": 7.3,
+        "avs": 6.5,
+        "lega": 5.8,
+        "azione": 3.3,
+        "iv": 2.3,
+        "europa": 1.7,
+        "nm": 1.1
+      },
+      "comparable": true,
+      "source": "https://www.la7.it/piazzapulita/video/sondaggi-eumetra-mannheimer-futuro-nazionale-ha-un-arretramento-e-finita-la-corsa-di-vannacci-16-10-2026-661992",
+      "source_kind": "committente La7 / Piazzapulita: Eumetra",
+      "fieldwork": [
+        "2026-10-13",
+        "2026-10-14"
+      ],
+      "method": "CAWI",
+      "sample": 800,
+      "extra_values": {
+        "Sud Chiama Nord": 1.0,
+        "Altri": 3.4
+      },
+      "corroborating_source": "https://www.sondaggipoliticoelettorali.it/ListaSondaggi.aspx?st=SONDAGGI",
+      "note": "Diffusione originaria nella puntata Piazzapulita del 15 ottobre; la pagina La7 è datata 16 ottobre. Valori della tavola verificati con il materiale pubblicato e metadati nel deposito ufficiale del medesimo omnibus: 800 interviste, campione casuale stratificato per quote, margine dichiarato ±4%. La registrazione del 19 ottobre non modifica la data originaria."
+    },
+    {
+      "id": "only-2026-10-16",
+      "institute": "only",
+      "published": "2026-10-16",
+      "values": {
+        "fdi": 27.8,
+        "pd": 20.0,
+        "m5s": 11.1,
+        "fn": 6.8,
+        "fi": 7.7,
+        "avs": 6.6,
+        "lega": 6.0,
+        "azione": 3.3,
+        "iv": 2.3,
+        "europa": 1.4,
+        "nm": 1.0
+      },
+      "comparable": true,
+      "source": "https://www.facebook.com/Realpolitikofficial/videos/intenzioni-di-voto-alle-elezioni-politichei-sondaggi-di-alessandra-ghisleri-a-re/1629165375280246/",
+      "source_kind": "committente Realpolitik: Only Numbers",
+      "fieldwork": [
+        "2026-10-14",
+        "2026-10-15"
+      ],
+      "method": null,
+      "sample": null,
+      "nonresponse": {
+        "label": "Indecisi e astenuti",
+        "value": 39.7
+      },
+      "extra_values": {
+        "Sud Chiama Nord": 0.6,
+        "Progetto Civico": 1.3,
+        "Più Uno": 0.7,
+        "Altri": 3.4
+      },
+      "corroborating_source": "https://www.iltempo.it/news/politica/sondaggio-ghisleri-fdi-cresce-terremoto-campo-largo-quanto-prende-il-centrino-di-ruffini/",
+      "note": "Presentato da Alessandra Ghisleri a Realpolitik il 16 ottobre. Periodo e tavola completa verificati; metodo e campione non risultano pubblicati nelle fonti consultate e restano esplicitamente mancanti. Indecisi e astenuti sono mantenuti nella categoria originale, senza conversioni."
+    },
+    {
+      "id": "termometro-2026-10-16",
+      "institute": "termometro",
+      "published": "2026-10-16",
+      "values": {
+        "fdi": 27.5,
+        "pd": 21.1,
+        "m5s": 12.5,
+        "fn": 7.3,
+        "fi": 7.5,
+        "avs": 6.3,
+        "lega": 5.3,
+        "azione": 3.0,
+        "iv": 2.4,
+        "europa": 1.8,
+        "nm": 1.1
+      },
+      "comparable": true,
+      "source": "https://www.termometropolitico.it/1634651_sondaggi-politici-tp-16-10-2026.html",
+      "source_kind": "fonte primaria Termometro Politico",
+      "fieldwork": [
+        "2026-10-13",
+        "2026-10-15"
+      ],
+      "method": "CAWI",
+      "sample": 2400,
+      "extra_values": {
+        "Altri": 4.2
+      },
+      "note": "Valori e nota metodologica pubblicati direttamente da Termometro Politico il 16 ottobre: 2.400 interviste CAWI raccolte dal 13 al 15 ottobre."
+    },
+    {
+      "id": "swg-2026-10-19-schlein",
+      "institute": "swg",
+      "published": "2026-10-19",
+      "values": {
+        "fdi": 29.7,
+        "pd": 21.2,
+        "m5s": 11.8,
+        "fn": 5.6,
+        "fi": 7.2,
+        "avs": 6.4,
+        "lega": 5.1,
+        "azione": 3.1,
+        "iv": 2.4,
+        "europa": 1.3,
+        "nm": 1.0
+      },
+      "comparable": false,
+      "exclusion_reason": "scenario condizionato alla candidatura di Elly Schlein",
+      "source": "https://tg.la7.it/sondaggi/sondaggio-politico-19-ottobre-voto-schlein-conte-centrosinistra-19-10-2026-264547",
+      "source_kind": "committente TG La7: SWG",
+      "fieldwork": [
+        "2026-10-14",
+        "2026-10-19"
+      ],
+      "method": "CATI/CAMI/CAWI",
+      "sample": 1200,
+      "nonresponse": {
+        "label": "Non si esprime",
+        "value": 28
+      },
+      "extra_values": {
+        "Sud Chiama Nord": 1.0,
+        "Altri centrosinistra (PSI, Progetto Civico, Più Uno)": 1.5,
+        "Altri area centro (LibDem, ORA!)": 1.3,
+        "Altre liste": 1.4
+      },
+      "note": "Scenario esplicitamente condizionato a Elly Schlein candidata del centrosinistra e Giorgia Meloni candidata del centrodestra. La diversa formulazione altera la comparabilità con le intenzioni di voto non condizionate: scheda pubblicata ma esclusa da medie e trend. Campione stratificato nazionale; 4.329 non rispondenti, margine dichiarato ±2,8% al 95%."
+    },
+    {
+      "id": "swg-2026-10-19-conte",
+      "institute": "swg",
+      "published": "2026-10-19",
+      "values": {
+        "fdi": 29.8,
+        "pd": 20.5,
+        "m5s": 13.1,
+        "fn": 5.4,
+        "fi": 7.1,
+        "avs": 6.5,
+        "lega": 5.1,
+        "azione": 3.2,
+        "iv": 1.9,
+        "europa": 1.1,
+        "nm": 1.1
+      },
+      "comparable": false,
+      "exclusion_reason": "scenario condizionato alla candidatura di Giuseppe Conte",
+      "source": "https://tg.la7.it/sondaggi/sondaggio-politico-19-ottobre-voto-schlein-conte-centrosinistra-19-10-2026-264547",
+      "source_kind": "committente TG La7: SWG",
+      "fieldwork": [
+        "2026-10-14",
+        "2026-10-19"
+      ],
+      "method": "CATI/CAMI/CAWI",
+      "sample": 1200,
+      "nonresponse": {
+        "label": "Non si esprime",
+        "value": 28
+      },
+      "extra_values": {
+        "Sud Chiama Nord": 1.0,
+        "Altri centrosinistra (PSI, Progetto Civico, Più Uno)": 1.4,
+        "Altri area centro (LibDem, ORA!)": 1.5,
+        "Altre liste": 1.3
+      },
+      "note": "Scenario esplicitamente condizionato a Giuseppe Conte candidato del centrosinistra e Giorgia Meloni candidata del centrodestra. La diversa formulazione altera la comparabilità con le intenzioni di voto non condizionate: scheda pubblicata ma esclusa da medie e trend. Campione stratificato nazionale; 4.329 non rispondenti, margine dichiarato ±2,8% al 95%."
     }
   ],
-  "verification_note": "Controllo del 15 ottobre 2026: nessuna nuova rilevazione nazionale successiva allo SWG del 12 ottobre. Risolta la segnalazione Only Numbers del 23–24 settembre mediante la scheda ufficiale: diffusione originaria del 25 settembre, 800 interviste CAWI e tavola completa inserita senza duplicare il deposito del 29 settembre. Restano valide le integrazioni ufficiali del 14 ottobre per Only Numbers, Lab21, Piave ed EMG."
+  "verification_note": "Controllo del 20 ottobre 2026: inserite le nuove rilevazioni comparabili Eumetra del 15 ottobre, Only Numbers e Termometro Politico del 16 ottobre. I due scenari SWG del 19 ottobre sono pubblicati come schede fuori media perché condizionati al candidato premier del centrosinistra. Il registro ufficiale è stato controllato fino ai depositi del 19 ottobre; le ripubblicazioni tardive non generano duplicati né modificano la data originaria."
 }
 
 
