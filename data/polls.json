@@ -1,5 +1,5 @@
 {
-  "verified_on": "2026-10-20",
+  "verified_on": "2026-10-21",
   "polls": [
     {
       "id": "bidimedia-2026-08-24",
@@ -1399,6 +1399,44 @@
       "note": "Valori e nota metodologica pubblicati direttamente da Termometro Politico il 16 ottobre: 2.400 interviste CAWI raccolte dal 13 al 15 ottobre."
     },
     {
+      "id": "piepoli-2026-10-19",
+      "institute": "piepoli",
+      "published": "2026-10-19",
+      "values": {
+        "fdi": 28.0,
+        "pd": 20.0,
+        "m5s": 12.5,
+        "fn": 7.0,
+        "fi": 7.5,
+        "avs": 6.5,
+        "lega": 5.0,
+        "azione": 3.0,
+        "iv": 2.5,
+        "europa": 1.5,
+        "nm": 1.5
+      },
+      "comparable": true,
+      "source": "https://www.sondaggipoliticoelettorali.it/ListaSondaggi.aspx?st=SONDAGGI",
+      "source_kind": "registro ufficiale: Istituto Piepoli / Agorà Rai 3",
+      "fieldwork": [
+        "2026-10-12",
+        "2026-10-14"
+      ],
+      "method": "CATI/CAMI/CAWI",
+      "sample": 522,
+      "nonresponse": {
+        "label": "Indecisi-astenuti",
+        "value": 28
+      },
+      "extra_values": {
+        "Sud Chiama Nord": 1.5,
+        "Partito Liberaldemocratico": 1.5,
+        "Altri partiti": 2.0
+      },
+      "corroborating_source": "https://www.lidentita.it/sondaggio-piepoli-centrodestra-avanti/",
+      "note": "Diffusione originaria ad Agorà Rai 3 il 19 ottobre e deposito ufficiale del 20 ottobre. Campione nazionale casuale rappresentativo: 363 interviste CATI/CAMI e 159 CAWI; margine dichiarato ±4,29% al 95%. Le quote aggregate Centrodestra 43,5% e Campo largo 43% restano distinte dalle medie per partito. La categoria congiunta «indecisi-astenuti» è riportata senza separarne o reinterpretarne le componenti."
+    },
+    {
       "id": "swg-2026-10-19-schlein",
       "institute": "swg",
       "published": "2026-10-19",
@@ -1435,7 +1473,8 @@
         "Altri area centro (LibDem, ORA!)": 1.3,
         "Altre liste": 1.4
       },
-      "note": "Scenario esplicitamente condizionato a Elly Schlein candidata del centrosinistra e Giorgia Meloni candidata del centrodestra. La diversa formulazione altera la comparabilità con le intenzioni di voto non condizionate: scheda pubblicata ma esclusa da medie e trend. Campione stratificato nazionale; 4.329 non rispondenti, margine dichiarato ±2,8% al 95%."
+      "corroborating_source": "https://www.sondaggipoliticoelettorali.it/ListaSondaggi.aspx?st=SONDAGGI",
+      "note": "Scenario esplicitamente condizionato a Elly Schlein candidata del centrosinistra e Giorgia Meloni candidata del centrodestra. La diversa formulazione altera la comparabilità con le intenzioni di voto non condizionate: scheda pubblicata ma esclusa da medie e trend. Valori e metadati confermati nel deposito ufficiale del 20 ottobre: campione stratificato nazionale, 4.329 non rispondenti, margine dichiarato ±2,8% al 95%."
     },
     {
       "id": "swg-2026-10-19-conte",
@@ -1474,10 +1513,11 @@
         "Altri area centro (LibDem, ORA!)": 1.5,
         "Altre liste": 1.3
       },
-      "note": "Scenario esplicitamente condizionato a Giuseppe Conte candidato del centrosinistra e Giorgia Meloni candidata del centrodestra. La diversa formulazione altera la comparabilità con le intenzioni di voto non condizionate: scheda pubblicata ma esclusa da medie e trend. Campione stratificato nazionale; 4.329 non rispondenti, margine dichiarato ±2,8% al 95%."
+      "corroborating_source": "https://www.sondaggipoliticoelettorali.it/ListaSondaggi.aspx?st=SONDAGGI",
+      "note": "Scenario esplicitamente condizionato a Giuseppe Conte candidato del centrosinistra e Giorgia Meloni candidata del centrodestra. La diversa formulazione altera la comparabilità con le intenzioni di voto non condizionate: scheda pubblicata ma esclusa da medie e trend. Valori e metadati confermati nel deposito ufficiale del 20 ottobre: campione stratificato nazionale, 4.329 non rispondenti, margine dichiarato ±2,8% al 95%."
     }
   ],
-  "verification_note": "Controllo del 20 ottobre 2026: inserite le nuove rilevazioni comparabili Eumetra del 15 ottobre, Only Numbers e Termometro Politico del 16 ottobre. I due scenari SWG del 19 ottobre sono pubblicati come schede fuori media perché condizionati al candidato premier del centrosinistra. Il registro ufficiale è stato controllato fino ai depositi del 19 ottobre; le ripubblicazioni tardive non generano duplicati né modificano la data originaria."
+  "verification_note": "Controllo del 21 ottobre 2026: inserita la nuova rilevazione comparabile Istituto Piepoli diffusa il 19 ottobre; medie e grafici avanzano alla stessa data. Il deposito ufficiale del 20 ottobre conferma inoltre valori e metadati dei due scenari SWG del 19 ottobre, mantenuti fuori media perché condizionati al candidato premier del centrosinistra. Le ripubblicazioni tardive non generano duplicati né modificano la data originaria."
 }
 
 
