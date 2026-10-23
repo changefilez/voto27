@@ -1,5 +1,5 @@
 {
-  "verified_on": "2026-10-21",
+  "verified_on": "2026-10-23",
   "polls": [
     {
       "id": "bidimedia-2026-08-24",
@@ -1515,9 +1515,52 @@
       },
       "corroborating_source": "https://www.sondaggipoliticoelettorali.it/ListaSondaggi.aspx?st=SONDAGGI",
       "note": "Scenario esplicitamente condizionato a Giuseppe Conte candidato del centrosinistra e Giorgia Meloni candidata del centrodestra. La diversa formulazione altera la comparabilità con le intenzioni di voto non condizionate: scheda pubblicata ma esclusa da medie e trend. Valori e metadati confermati nel deposito ufficiale del 20 ottobre: campione stratificato nazionale, 4.329 non rispondenti, margine dichiarato ±2,8% al 95%."
+    },
+    {
+      "id": "bidimedia-2026-10-21",
+      "institute": "bidimedia",
+      "published": "2026-10-21",
+      "values": {
+        "fdi": 26.5,
+        "pd": 20.5,
+        "m5s": 12.0,
+        "fn": 7.2,
+        "fi": 6.7,
+        "avs": 6.6,
+        "lega": 5.4,
+        "azione": 3.0,
+        "iv": 2.0,
+        "europa": 1.1,
+        "nm": 1.0
+      },
+      "comparable": true,
+      "source": "https://sondaggibidimedia.it/2026/10/22/sondaggio-bidimedia-21-ottobre-2026/",
+      "source_kind": "fonte primaria BiDiMedia",
+      "fieldwork": [
+        "2026-10-17",
+        "2026-10-19"
+      ],
+      "method": "CAWI da panel",
+      "sample": 1000,
+      "nonresponse": {
+        "label": "Indecisi",
+        "value": 24
+      },
+      "extra_values": {
+        "Sud Chiama Nord": 1.4,
+        "Progetto Civico Italia": 1.0,
+        "Partito Liberaldemocratico": 0.8,
+        "Potere al Popolo": 0.8,
+        "Rifondazione Comunista": 0.8,
+        "Ora!": 0.7,
+        "Avanti - PSI": 0.6,
+        "UDC": 0.5,
+        "Un'altra lista": 1.4
+      },
+      "note": "Presentato in diretta il 21 ottobre e pubblicato sul sito dell’istituto il 22 ottobre: conservata la data originaria indicata nella tavola. Campione nazionale rappresentativo della popolazione maggiorenne per genere, istruzione, età, provincia, dimensione del comune e condizione lavorativa, ponderato per voto pregresso; 1.000 interviste su 1.677 contatti, tasso di risposta utile 60%, margine dichiarato ±3,1% al 95%. Affluenza stimata 54–58% e schede bianche/nulle 1,6% sono mantenute come categorie distinte e non trasformate in astensione o non risposta."
     }
   ],
-  "verification_note": "Controllo del 21 ottobre 2026: inserita la nuova rilevazione comparabile Istituto Piepoli diffusa il 19 ottobre; medie e grafici avanzano alla stessa data. Il deposito ufficiale del 20 ottobre conferma inoltre valori e metadati dei due scenari SWG del 19 ottobre, mantenuti fuori media perché condizionati al candidato premier del centrosinistra. Le ripubblicazioni tardive non generano duplicati né modificano la data originaria."
+  "verification_note": "Controllo del 23 ottobre 2026: inserita la nuova rilevazione comparabile BiDiMedia presentata il 21 ottobre e pubblicata dall’istituto il 22 ottobre; medie e grafici avanzano alla data originaria del sondaggio. Valori, interviste, metodo e campione sono verificati nella pubblicazione primaria. Affluenza stimata, indecisi e schede bianche/nulle restano categorie separate."
 }
 
 
