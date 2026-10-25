@@ -1,5 +1,5 @@
 {
-  "verified_on": "2026-10-24",
+  "verified_on": "2026-10-25",
   "polls": [
     {
       "id": "bidimedia-2026-08-24",
@@ -1653,11 +1653,11 @@
       "source_kind": "committente La7 / Piazzapulita: Eumetra",
       "fieldwork": null,
       "method": null,
-      "sample": null,
+      "sample": 800,
       "extra_values": {
         "Sud Chiama Nord": 1.1
       },
-      "note": "Presentato nella puntata Piazzapulita del 22 ottobre; la pagina La7 è datata 23 ottobre. Valori della tavola verificati nella pubblicazione del committente. Periodo completo delle interviste, metodo, campione e valore delle altre liste non risultano ancora pubblicati e restano esplicitamente mancanti. Il totale Campo largo 43,0% e partiti di governo 42,8% è un’aggregazione distinta dalle medie VOTO27."
+      "note": "Presentato nella puntata Piazzapulita del 22 ottobre; la pagina La7 è datata 23 ottobre. Valori della tavola verificati nella pubblicazione del committente. Il campione di 800 interviste è confermato dalla documentazione riepilogativa; periodo completo delle interviste, metodo e valore delle altre liste non risultano ancora pubblicati nella fonte primaria e restano esplicitamente mancanti. Il totale Campo largo 43,0% e partiti di governo 42,8% è un’aggregazione distinta dalle medie VOTO27."
     },
     {
       "id": "emg-2026-10-22",
@@ -1689,9 +1689,75 @@
         "Altri centrosinistra (Progetto Civico, PSI)": 1.0
       },
       "note": "Diffuso a Linea Notte su Rai 3 il 22 ottobre. La tavola completa è documentata dall’agenzia; periodo delle interviste, metodo e campione non risultano ancora disponibili nelle fonti consultate. Le aggregazioni Centrodestra 44,0%, Centrosinistra 43,1% e Centro 5,2% restano distinte dalle medie VOTO27."
+    },
+    {
+      "id": "only-2026-10-23",
+      "institute": "only",
+      "published": "2026-10-23",
+      "values": {
+        "fdi": 28.0,
+        "pd": 20.0,
+        "m5s": 11.4,
+        "fn": 6.8,
+        "fi": 7.5,
+        "avs": 6.5,
+        "lega": 6.4,
+        "azione": 3.1,
+        "iv": 2.4,
+        "europa": 1.6,
+        "nm": 1.0
+      },
+      "comparable": true,
+      "source": "https://www.facebook.com/Realpolitikofficial/posts/sondaggi-politici-intenzioni-di-voto-alle-elezionirealpolitik/122191633094957674/",
+      "source_kind": "committente Realpolitik: Only Numbers",
+      "fieldwork": [
+        "2026-10-21",
+        "2026-10-22"
+      ],
+      "method": null,
+      "sample": 800,
+      "extra_values": {
+        "Sud Chiama Nord": 0.8,
+        "Progetto Civico": 0.9,
+        "Più Uno": 0.6,
+        "Altri": 3.0
+      },
+      "corroborating_source": "https://www.iltempo.it/news/politica/sondaggio-ghisleri-controsorpasso-le-ambiguita-sui-maranza-affondano-il-campo-largo/",
+      "note": "Presentato da Alessandra Ghisleri a Realpolitik il 23 ottobre. Tavola completa e periodo 21–22 ottobre verificati nella pubblicazione del committente e nel resoconto contemporaneo; campione di 800 interviste. Il metodo non risulta pubblicato nelle fonti consultate e resta esplicitamente mancante. Le aggregazioni Centrodestra 43,7% e centrosinistra 43,4% sono mantenute separate dalle medie VOTO27."
+    },
+    {
+      "id": "termometro-2026-10-23",
+      "institute": "termometro",
+      "published": "2026-10-23",
+      "values": {
+        "fdi": 27.8,
+        "pd": 20.6,
+        "m5s": 12.7,
+        "fn": 7.5,
+        "fi": 7.3,
+        "avs": 6.4,
+        "lega": 5.4,
+        "azione": 2.8,
+        "iv": 2.5,
+        "europa": 1.6,
+        "nm": 1.0
+      },
+      "comparable": true,
+      "source": "https://www.termometropolitico.it/90001_sondaggi-politici-tp-23-10-2026.html",
+      "source_kind": "fonte primaria Termometro Politico",
+      "fieldwork": [
+        "2026-10-20",
+        "2026-10-22"
+      ],
+      "method": "CAWI",
+      "sample": 2400,
+      "extra_values": {
+        "Altri": 4.4
+      },
+      "note": "Valori e nota metodologica pubblicati direttamente da Termometro Politico il 23 ottobre: 2.400 interviste CAWI raccolte dal 20 al 22 ottobre."
     }
   ],
-  "verification_note": "Controllo del 24 ottobre 2026: inserite le nuove rilevazioni comparabili Eumetra e EMG diffuse il 22 ottobre; medie e grafici avanzano alla stessa data. Aggiunti anche i due scenari Noto del 20 ottobre, mantenuti fuori media perché condizionati alla candidatura di Schlein o Conte. La scheda Only Numbers indicata da una fonte secondaria come 20 ottobre coincide con la rilevazione Realpolitik già presente e non è stata duplicata. I metadati non ancora pubblicati restano esplicitamente mancanti."
+  "verification_note": "Controllo del 25 ottobre 2026: inserite le rilevazioni comparabili Only Numbers e Termometro Politico pubblicate il 23 ottobre; medie e grafici avanzano alla stessa data. Only Numbers sostituisce nella media la precedente rilevazione dello stesso istituto senza duplicarla. Aggiornato anche il campione Eumetra del 22 ottobre. I metadati non ancora pubblicati restano esplicitamente mancanti."
 }
 
 
