@@ -1,5 +1,5 @@
 {
-  "verified_on": "2026-10-25",
+  "verified_on": "2026-10-26",
   "polls": [
     {
       "id": "bidimedia-2026-08-24",
@@ -1755,9 +1755,42 @@
         "Altri": 4.4
       },
       "note": "Valori e nota metodologica pubblicati direttamente da Termometro Politico il 23 ottobre: 2.400 interviste CAWI raccolte dal 20 al 22 ottobre."
+    },
+    {
+      "id": "lab21-2026-10-24",
+      "institute": "lab21",
+      "published": "2026-10-24",
+      "values": {
+        "fdi": 28.4,
+        "pd": 20.0,
+        "m5s": 13.2,
+        "fn": 7.9,
+        "fi": 6.8,
+        "avs": 5.6,
+        "lega": 5.7,
+        "azione": 3.0,
+        "iv": 2.6,
+        "europa": 1.0,
+        "nm": 0.9
+      },
+      "comparable": true,
+      "source": "https://www.affaritaliani.it/politica/sondaggi-testa-a-testa-tra-campo-largo-e-centrodestra-tra-i-governatori-vola-decaro-stefani-in-calo-fontana-sul-podio.html",
+      "source_kind": "committente Affaritaliani: Lab21",
+      "fieldwork": [
+        "2026-10-05",
+        "2026-10-22"
+      ],
+      "method": "CATI/CAMI/CAWI",
+      "sample": 5406,
+      "extra_values": {
+        "Sud Chiama Nord": 1.7,
+        "Progetto Civico Italia": 1.2,
+        "Altri": 2.0
+      },
+      "note": "Rilevazione n. 320 diffusa il 24 ottobre da Affaritaliani. Tavola completa e scheda metodologica verificate nelle immagini originali del committente: popolazione maggiorenne residente in Italia, campione probabilistico stratificato e ponderato, 17.441 contatti totali, 5.406 interviste valide e complete e 12.035 non rispondenti o sostituzioni. Le aggregazioni Centrodestra 43,5% e Campo largo 43,6% sono mantenute separate dalle medie VOTO27."
     }
   ],
-  "verification_note": "Controllo del 25 ottobre 2026: inserite le rilevazioni comparabili Only Numbers e Termometro Politico pubblicate il 23 ottobre; medie e grafici avanzano alla stessa data. Only Numbers sostituisce nella media la precedente rilevazione dello stesso istituto senza duplicarla. Aggiornato anche il campione Eumetra del 22 ottobre. I metadati non ancora pubblicati restano esplicitamente mancanti."
+  "verification_note": "Controllo del 26 ottobre 2026: inserita la nuova rilevazione comparabile Lab21 diffusa il 24 ottobre, con tavola e scheda metodologica complete; medie e grafici avanzano alla stessa data. La nuova scheda sostituisce nella media l’ultima rilevazione Lab21 senza duplicarla. I metadati non ancora pubblicati delle altre schede restano esplicitamente mancanti."
 }
 
 
