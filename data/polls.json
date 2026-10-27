@@ -1,5 +1,5 @@
 {
-  "verified_on": "2026-10-26",
+  "verified_on": "2026-10-27",
   "polls": [
     {
       "id": "bidimedia-2026-08-24",
@@ -1788,9 +1788,79 @@
         "Altri": 2.0
       },
       "note": "Rilevazione n. 320 diffusa il 24 ottobre da Affaritaliani. Tavola completa e scheda metodologica verificate nelle immagini originali del committente: popolazione maggiorenne residente in Italia, campione probabilistico stratificato e ponderato, 17.441 contatti totali, 5.406 interviste valide e complete e 12.035 non rispondenti o sostituzioni. Le aggregazioni Centrodestra 43,5% e Campo largo 43,6% sono mantenute separate dalle medie VOTO27."
+    },
+    {
+      "id": "swg-2026-10-26",
+      "institute": "swg",
+      "published": "2026-10-26",
+      "values": {
+        "fdi": 29.3,
+        "pd": 20.6,
+        "m5s": 12.4,
+        "fn": 5.6,
+        "fi": 7.4,
+        "avs": 6.3,
+        "lega": 5.4,
+        "azione": 3.1,
+        "iv": 2.3,
+        "europa": 1.4,
+        "nm": 1.0
+      },
+      "comparable": true,
+      "source": "https://tg.la7.it/sondaggi/sondaggio-politico-26-ottobre-voto-26-10-2026-264898",
+      "source_kind": "committente TG La7: SWG",
+      "fieldwork": [
+        "2026-10-21",
+        "2026-10-26"
+      ],
+      "method": "CATI/CAMI/CAWI",
+      "sample": 1200,
+      "nonresponse": {
+        "label": "Non si esprime",
+        "value": 30
+      },
+      "extra_values": {
+        "Sud Chiama Nord": 1.0,
+        "Avanti PSI": 1.0,
+        "Altri centrosinistra": 0.9,
+        "Altre liste": 2.3
+      },
+      "note": "Valori e metadati verificati nelle due tavole originali SWG pubblicate da TG La7. Campione stratificato di maggiorenni residenti in Italia; 4.381 non rispondenti e margine dichiarato ±2,8% al 95%. La fonte aggrega Azione con Spazio Pubblico al 3,1%: il valore contribuisce al solo indicatore Azione, senza ricostruire componenti non pubblicate. La voce «Non si esprime» resta separata e non è trattata come astensione."
+    },
+    {
+      "id": "lab21-2026-10-17",
+      "institute": "lab21",
+      "published": "2026-10-17",
+      "values": {
+        "fdi": 28.2,
+        "pd": 20.0,
+        "m5s": 13.6,
+        "fn": 8.1,
+        "fi": 6.9,
+        "avs": 5.5,
+        "lega": 5.6,
+        "azione": 3.0,
+        "iv": 2.8,
+        "europa": 1.1,
+        "nm": 0.9
+      },
+      "comparable": true,
+      "source": "https://www.affaritaliani.it/politica/sondaggi-onorato-e-il-nome-a-sorpresa-per-guidare-il-campo-largo-sul-podio-con-conte-e-schlein.html",
+      "source_kind": "committente Affaritaliani: Lab21",
+      "fieldwork": [
+        "2026-10-10",
+        "2026-10-15"
+      ],
+      "method": "CATI/CAMI/CAWI",
+      "sample": 1046,
+      "extra_values": {
+        "Sud Chiama Nord": 1.6,
+        "Altri partiti": 2.7
+      },
+      "note": "Rilevazione n. 319 datata 17 ottobre, recuperata dalla pubblicazione originale del committente. Campione probabilistico nazionale stratificato e ponderato: 5.128 contatti, 1.046 interviste valide e 4.082 non rispondenti o sostituzioni; margine dichiarato ±3,0% al 95%. L’inserimento colma una lacuna storica senza sostituire la successiva rilevazione Lab21 n. 320 del 24 ottobre usata nella media corrente."
     }
   ],
-  "verification_note": "Controllo del 26 ottobre 2026: inserita la nuova rilevazione comparabile Lab21 diffusa il 24 ottobre, con tavola e scheda metodologica complete; medie e grafici avanzano alla stessa data. La nuova scheda sostituisce nella media l’ultima rilevazione Lab21 senza duplicarla. I metadati non ancora pubblicati delle altre schede restano esplicitamente mancanti."
+  "verification_note": "Controllo del 27 ottobre 2026: inserita la nuova rilevazione comparabile SWG diffusa il 26 ottobre, verificata nelle tavole originali del committente; medie e grafici avanzano alla stessa data. Recuperata inoltre la rilevazione Lab21 n. 319 del 17 ottobre, assente dal feed: completa l’archivio storico ma non sostituisce la successiva n. 320 nella media corrente. Il registro ufficiale non risulta ancora indicizzato per SWG; periodo, metodo e campione sono riportati nella nota metodologica della fonte primaria."
 }
 
 
