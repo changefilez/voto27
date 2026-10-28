@@ -1,5 +1,5 @@
 {
-  "verified_on": "2026-10-27",
+  "verified_on": "2026-10-28",
   "polls": [
     {
       "id": "bidimedia-2026-08-24",
@@ -1858,9 +1858,116 @@
         "Altri partiti": 2.7
       },
       "note": "Rilevazione n. 319 datata 17 ottobre, recuperata dalla pubblicazione originale del committente. Campione probabilistico nazionale stratificato e ponderato: 5.128 contatti, 1.046 interviste valide e 4.082 non rispondenti o sostituzioni; margine dichiarato ±3,0% al 95%. L’inserimento colma una lacuna storica senza sostituire la successiva rilevazione Lab21 n. 320 del 24 ottobre usata nella media corrente."
+    },
+    {
+      "id": "piepoli-2026-10-23",
+      "institute": "piepoli",
+      "published": "2026-10-23",
+      "values": {
+        "fdi": 28.0,
+        "pd": 20.5,
+        "m5s": 13.0,
+        "fn": 6.5,
+        "fi": 7.0,
+        "avs": 6.5,
+        "lega": 5.0,
+        "azione": 3.0,
+        "iv": 2.5,
+        "europa": 1.5,
+        "nm": 1.5
+      },
+      "comparable": true,
+      "source": "https://www.sondaggipoliticoelettorali.it/ListaSondaggi.aspx?st=SONDAGGI",
+      "source_kind": "registro ufficiale: Istituto Piepoli / Omnibus La7",
+      "fieldwork": [
+        "2026-10-19",
+        "2026-10-19"
+      ],
+      "method": "CATI/CAMI/CAWI",
+      "sample": 509,
+      "nonresponse": {
+        "label": "Indecisi-astenuti",
+        "value": 30
+      },
+      "extra_values": {
+        "Sud Chiama Nord": 1.5,
+        "Partito Liberaldemocratico": 1.5,
+        "Altri partiti": 2.0
+      },
+      "note": "Diffuso a Omnibus La7 il 23 ottobre e depositato il 26 ottobre. La scheda ufficiale riporta 353 interviste CATI/CAMI e 156 CAWI, 5.889 non rispondenti o rifiuti su 6.398 contatti e margine dichiarato ±4,34% al 95%. Le quote aggregate Centrodestra 43% e Campo largo 44% restano distinte dalle medie VOTO27. La categoria congiunta «indecisi-astenuti» è riportata senza separarne o reinterpretarne le componenti."
+    },
+    {
+      "id": "only-2026-10-27-schlein",
+      "institute": "only",
+      "published": "2026-10-27",
+      "values": {
+        "fdi": 27.6,
+        "pd": 20.8,
+        "m5s": 10.4,
+        "fn": 6.8,
+        "fi": 7.5,
+        "avs": 6.5,
+        "lega": 6.5,
+        "azione": 3.4,
+        "iv": 2.2,
+        "europa": 1.3,
+        "nm": 0.9
+      },
+      "comparable": false,
+      "exclusion_reason": "scenario condizionato alla candidatura di Elly Schlein",
+      "source": "https://www.liberoquotidiano.it/news/politica/49470184/sondaggio-ghisleri-altra-batosta-per-la-sinistra-il-centrodestra-e-avanti-sul-campo-largo.amp",
+      "source_kind": "resoconto contemporaneo della diffusione Only Numbers a Porta a Porta",
+      "fieldwork": null,
+      "method": null,
+      "sample": null,
+      "nonresponse": {
+        "label": "Astenuti e indecisi",
+        "value": 48.5
+      },
+      "extra_values": {
+        "Sud Chiama Nord": 0.8,
+        "Progetto Civico": 0.8
+      },
+      "corroborating_source": "https://alphabetcity.it/2026/10/28/sondaggi-politici-oggi-28-ottobre-2026-only-numbers/",
+      "note": "Scenario esplicitamente condizionato a Elly Schlein candidata premier del campo largo, diffuso a Porta a Porta il 27 ottobre. La diversa formulazione altera la comparabilità con le intenzioni di voto ordinarie: scheda pubblicata ma esclusa da medie e trend. Periodo delle interviste, metodo e campione non risultano ancora disponibili; la categoria congiunta «astenuti e indecisi» non viene separata né reinterpretata."
+    },
+    {
+      "id": "only-2026-10-27-conte",
+      "institute": "only",
+      "published": "2026-10-27",
+      "values": {
+        "fdi": 28.0,
+        "pd": 18.7,
+        "m5s": 12.0,
+        "fn": 6.5,
+        "fi": 7.6,
+        "avs": 6.2,
+        "lega": 6.3,
+        "azione": 4.0,
+        "iv": 1.9,
+        "europa": 1.8,
+        "nm": 1.0
+      },
+      "comparable": false,
+      "exclusion_reason": "scenario condizionato alla candidatura di Giuseppe Conte",
+      "source": "https://www.liberoquotidiano.it/news/politica/49470184/sondaggio-ghisleri-altra-batosta-per-la-sinistra-il-centrodestra-e-avanti-sul-campo-largo.amp",
+      "source_kind": "resoconto contemporaneo della diffusione Only Numbers a Porta a Porta",
+      "fieldwork": null,
+      "method": null,
+      "sample": null,
+      "nonresponse": {
+        "label": "Astenuti e indecisi",
+        "value": 47.3
+      },
+      "extra_values": {
+        "Sud Chiama Nord": 1.0,
+        "Progetto Civico": 1.0
+      },
+      "corroborating_source": "https://alphabetcity.it/2026/10/28/sondaggi-politici-oggi-28-ottobre-2026-only-numbers/",
+      "note": "Scenario esplicitamente condizionato a Giuseppe Conte candidato premier del campo largo, diffuso a Porta a Porta il 27 ottobre. La diversa formulazione altera la comparabilità con le intenzioni di voto ordinarie: scheda pubblicata ma esclusa da medie e trend. Periodo delle interviste, metodo e campione non risultano ancora disponibili; la categoria congiunta «astenuti e indecisi» non viene separata né reinterpretata."
     }
   ],
-  "verification_note": "Controllo del 27 ottobre 2026: inserita la nuova rilevazione comparabile SWG diffusa il 26 ottobre, verificata nelle tavole originali del committente; medie e grafici avanzano alla stessa data. Recuperata inoltre la rilevazione Lab21 n. 319 del 17 ottobre, assente dal feed: completa l’archivio storico ma non sostituisce la successiva n. 320 nella media corrente. Il registro ufficiale non risulta ancora indicizzato per SWG; periodo, metodo e campione sono riportati nella nota metodologica della fonte primaria."
+  "verification_note": "Controllo del 28 ottobre 2026: inserita la rilevazione comparabile Piepoli diffusa il 23 ottobre e depositata il 26, che sostituisce nella media la precedente rilevazione dello stesso istituto in base alla data di pubblicazione. Inseriti inoltre i due scenari Only Numbers diffusi il 27 ottobre, entrambi marcati fuori media perché condizionati al candidato premier; i metadati non ancora pubblicati restano esplicitamente mancanti. La data corrente di medie e grafici resta il 26 ottobre, giorno dell’ultima rilevazione comparabile SWG."
 }
 
 
