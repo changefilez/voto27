@@ -1,5 +1,5 @@
 {
-  "verified_on": "2026-10-28",
+  "verified_on": "2026-10-29",
   "polls": [
     {
       "id": "bidimedia-2026-08-24",
@@ -1714,16 +1714,20 @@
         "2026-10-21",
         "2026-10-22"
       ],
-      "method": null,
+      "method": "CAWI",
       "sample": 800,
+      "nonresponse": {
+        "label": "Indecisi - astensione",
+        "value": 44.2
+      },
       "extra_values": {
         "Sud Chiama Nord": 0.8,
         "Progetto Civico": 0.9,
         "Più Uno": 0.6,
         "Altri": 3.0
       },
-      "corroborating_source": "https://www.iltempo.it/news/politica/sondaggio-ghisleri-controsorpasso-le-ambiguita-sui-maranza-affondano-il-campo-largo/",
-      "note": "Presentato da Alessandra Ghisleri a Realpolitik il 23 ottobre. Tavola completa e periodo 21–22 ottobre verificati nella pubblicazione del committente e nel resoconto contemporaneo; campione di 800 interviste. Il metodo non risulta pubblicato nelle fonti consultate e resta esplicitamente mancante. Le aggregazioni Centrodestra 43,7% e centrosinistra 43,4% sono mantenute separate dalle medie VOTO27."
+      "corroborating_source": "https://www.sondaggipoliticoelettorali.it/ListaSondaggi.aspx?st=SONDAGGI",
+      "note": "Presentato da Alessandra Ghisleri a Realpolitik il 23 ottobre. Tavola completa e periodo 21–22 ottobre verificati nella pubblicazione del committente e nel registro ufficiale. La scheda depositata indica 800 interviste CAWI, 1.545 non rispondenti o rifiuti su 2.345 contatti e margine dichiarato ±3,5% al 95%. La categoria congiunta «indecisi - astensione» (44,2%) resta separata e non viene reinterpretata. Le aggregazioni Centrodestra 43,7% e centrosinistra 43,4% sono mantenute separate dalle medie VOTO27."
     },
     {
       "id": "termometro-2026-10-23",
@@ -1967,7 +1971,7 @@
       "note": "Scenario esplicitamente condizionato a Giuseppe Conte candidato premier del campo largo, diffuso a Porta a Porta il 27 ottobre. La diversa formulazione altera la comparabilità con le intenzioni di voto ordinarie: scheda pubblicata ma esclusa da medie e trend. Periodo delle interviste, metodo e campione non risultano ancora disponibili; la categoria congiunta «astenuti e indecisi» non viene separata né reinterpretata."
     }
   ],
-  "verification_note": "Controllo del 28 ottobre 2026: inserita la rilevazione comparabile Piepoli diffusa il 23 ottobre e depositata il 26, che sostituisce nella media la precedente rilevazione dello stesso istituto in base alla data di pubblicazione. Inseriti inoltre i due scenari Only Numbers diffusi il 27 ottobre, entrambi marcati fuori media perché condizionati al candidato premier; i metadati non ancora pubblicati restano esplicitamente mancanti. La data corrente di medie e grafici resta il 26 ottobre, giorno dell’ultima rilevazione comparabile SWG."
+  "verification_note": "Controllo del 29 ottobre 2026: nessuna nuova rilevazione nazionale comparabile successiva a SWG del 26 ottobre. Completati i metadati della rilevazione Only Numbers diffusa il 23 ottobre con metodo CAWI, quota congiunta indecisi-astensione, non rispondenti e margine d’errore ora disponibili nel registro ufficiale; la data originaria non cambia. Medie e grafici restano al 26 ottobre perché la correzione metodologica non modifica i valori di voto già inclusi."
 }
 
 
