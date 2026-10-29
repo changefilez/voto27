@@ -68,8 +68,8 @@ def short_dt(s):
     return f'{d.day} {MONTHS[d.month-1][:3]}'
 def card(content): return '<section class="card">'+content+'</section>'
 means = current['parties']; left=current['left']; right=current['right']; remainder=100-left-right
-intro = card(f'<div class="kicker">VOTO27 • Aggiornamento del {dt(data["verified_on"])}</div><h1>Oggi</h1>'
-    f'<p class="sub">Ultima rilevazione comparabile per ciascuno dei {len(current["selected_polls"])} istituti nella finestra di 42 giorni. Peso exp(−giorni/21). Ogni partito utilizza soltanto valori disponibili.</p>'
+intro = card(f'<div class="kicker">VOTO27 • Aggiornamento del {dt(data["verified_on"])}</div><h1>Il quadro di oggi</h1>'
+    f'<p class="sub">Medie, nuovi sondaggi e andamento del consenso. {len(current["selected_polls"])} istituti, una sola ultima rilevazione comparabile per ciascuno, negli ultimi 42 giorni.</p>'
     f'<div class="soft-stat-grid"><div class="soft-stat blue"><div class="lab">Primo partito</div><div class="stat-name">Fratelli d’Italia</div><div class="num">{fmt(means["fdi"])}%</div></div>'
     f'<div class="soft-stat warm"><div class="lab">Data effettiva della media</div><div class="stat-name">Ultimo dato incluso</div><div class="num">{short_dt(as_of)}</div></div></div>'
     f'<p class="tiny">Verifica delle fonti e aggiornamento delle schede: {dt(data["verified_on"])}. La media utilizza sondaggi pubblicati fino al {dt(as_of)}.</p>')
@@ -118,8 +118,14 @@ for p in sorted((p for p in polls if p['source'] or p['id'] in selected),key=lam
 recent += '<p class="tiny">'+escape(data.get('verification_note','Fonti e copertura dichiarate per ciascuna scheda; i metadati non verificati restano espliciti.'))+'</p>'
 baseline = series[0]
 movement = card(f'<div class="kicker">Movimento • {dt(baseline["date"])} – {dt(as_of)}</div><h2>Variazione dello scenario</h2><p>Centrosinistra: {fmt(left-baseline["left"])} punti. Centrodestra: {fmt(right-baseline["right"])} punti.</p><p class="tiny">Confronto fra due snapshot reali; la composizione degli istituti cambia nel periodo. Il confronto trimestrale non viene esteso senza i dati storici necessari.</p>')
-pole += "<p class=\"pole-note\" id=\"scn-alliance-note\"><b>Sud chiama Nord — Cateno De Luca:</b> collocato nel quadro politico del centrodestra nazionale dopo l’accordo per le politiche 2027 annunciato da De Luca il 9 ottobre 2026. L’intesa non si estende automaticamente alla Sicilia. Nei sondaggi del feed non è disponibile un valore separato verificato: nessuna percentuale aggiunta ai poli e nessuna modifica allo storico. L’1,5% dichiarato dal leader non è utilizzato come sondaggio. <a href=\"https://www.ilfoglio.it/politica/2026/10/09/news/fratelli-di-cateno-correro-con-meloni-per-fermare-vannacci-parla-il-leader-di-sud-chiama-nord--409967\" target=\"_blank\" rel=\"noopener noreferrer\">Fonte: intervista al Foglio, 9 ottobre 2026</a>. Verifica: 11 ottobre 2026.</p>"
-today = '<main id="oggi" class="page">'+intro+card(pole)+card(intents)+'<section class="card" id="rilevazioni-recenti">'+recent+'</section>'+movement+'</main>'
+pole += '<details class="context-note"><summary>Sud chiama Nord e le altre liste</summary><p class="pole-note">Alcune rilevazioni riportano Sud chiama Nord separatamente: i valori originali sono consultabili nelle singole schede. Il modello attuale aggrega gli 11 partiti elencati; Sud chiama Nord e le altre liste aggiuntive non hanno ancora una media autonoma e non sono sommati ai poli.</p></details>'
+latest = '<section class="card latest-card"><div class="section-heading"><div><div class="kicker">Le ultime pubblicazioni</div><h2>Rilevazioni recenti</h2></div><label class="text-action" for="tab-sondaggi">Tutte le schede →</label></div><div class="latest-list">'
+for p in sorted((p for p in polls if p.get('source')),key=lambda p:(p['published'],p['id']),reverse=True)[:4]:
+    latest += f'<label class="latest-item" for="tab-poll-{p["id"]}"><span><b>{NAMES[p["institute"]]}</b><small>{escape(status(p))}</small></span><span class="latest-date">{short_dt(p["published"])} <span aria-hidden="true">↗</span></span></label>'
+latest += '</div></section>'
+benchmark = json.loads((ROOT/'data/supermedia.json').read_text())
+benchmark_card = card(f'<div class="kicker">Confronto esterno • {dt(benchmark["updated"])}</div><h2>Supermedia YouTrend</h2><p class="sub">Un riferimento distinto dalla media VOTO27: i sondaggi sottostanti non vengono contati due volte.</p><div class="benchmark-values">'+''.join(f'<span>{PARTIES[k]} <b>{str(v).replace(".",",")}%</b></span>' for k,v in benchmark['values'].items() if k in PARTIES)+f'</div><p><a href="{escape(benchmark["source_url"],quote=True)}" target="_blank" rel="noopener noreferrer">Fonte YouTrend ↗</a></p>')
+today = '<main id="oggi" class="page">'+intro+latest+card(pole)+card(intents)+benchmark_card+'<section class="card" id="rilevazioni-recenti">'+recent+'</section>'+movement+'</main>'
 
 def chart(keys,labels,colors,low,high):
     width,height=640,280
@@ -155,12 +161,13 @@ ordered=sorted(polls,key=lambda p:(p['published'],p['id']),reverse=True)
 archive='<main id="sondaggi" class="page">'+card(
     '<div class="kicker">Archivio dati</div><h1>Sondaggi</h1>'
     f'<p class="sub">{len(polls)} schede ordinate per pubblicazione. Ultimo dato incluso nella media: {dt(as_of)}.</p>'
-    '<label class="poll-link" for="tab-oggi"><div><b>Media e rilevazioni recenti</b><span>Valori, copertura e fonti</span></div><strong>›</strong></label>')
+    '<label class="poll-link" for="tab-oggi"><div><b>Media e rilevazioni recenti</b><span>Valori, copertura e fonti</span></div><strong>›</strong></label>'
+    '<div class="archive-tools" hidden><label for="poll-search">Cerca per istituto o data</label><input id="poll-search" type="search" placeholder="Es. SWG, 26 ottobre…" autocomplete="off"><label for="poll-status">Mostra</label><select id="poll-status"><option value="all">Tutte le rilevazioni</option><option value="current">Nella media corrente</option><option value="excluded">Scenari esclusi dalla media</option></select><p id="poll-count" class="tiny" role="status" aria-live="polite"></p></div>')
 archive+='<section class="card"><div class="poll-list">'
 pages=[]
 for p in ordered:
     pid='poll-'+p['id']
-    archive+=f'<label class="poll-link" for="tab-{pid}"><div><b>{NAMES[p["institute"]]}</b><span>{dt(p["published"])} · {escape(status(p))}</span></div><strong>›</strong></label>'
+    archive+=f'<label class="poll-link" data-poll-state="{("excluded" if not p["comparable"] else "current" if p["id"] in selected else "historical")}" for="tab-{pid}"><div><b>{NAMES[p["institute"]]}</b><span>{dt(p["published"])} · {escape(status(p))}</span></div><strong>›</strong></label>'
     heading='<label class="back-link" for="tab-sondaggi">‹ Tutti i sondaggi</label><div class="kicker">Sondaggio singolo</div>'
     heading+=f'<h1>{NAMES[p["institute"]]}</h1><div class="sub"><time datetime="{p["published"]}">{dt(p["published"])}</time></div><div class="visual-note">{escape(status(p))}</div>'
     rows=[]
@@ -168,7 +175,7 @@ for p in ordered:
         rows.append(f'<div class="single-row party-{k}"><div class="single-head"><span class="single-name"><i class="party-dot"></i>{PARTIES[k]}</span><b>{str(v).replace(".",",")}%</b></div><div class="single-line"><div class="single-fill" style="width:{v/35*100:.1f}%"></div><span class="single-dot" style="left:{v/35*100:.1f}%"></span></div></div>')
     chart_html='<h2>Intenzioni di voto</h2><div class="single-poll-chart">'+''.join(rows)+'</div><div class="sourcebox">Valori del singolo sondaggio: non è una media VOTO27.</div>'
     pages.append(f'<main id="{pid}" class="page">'+card(heading)+card(chart_html)+card(metadata(p))+'</main>')
-archive+='</div></section></main>'
+archive+='<p id="poll-empty" hidden>Nessun sondaggio trovato. Prova un altro istituto o una data diversa.</p></div></section></main>'
 h,n=re.subn(r'<main id="sondaggi".*?</main>',lambda m:archive,h,flags=re.S);assert n==1
 h=re.sub(r'<main id="poll-[^"]+".*?</main>\s*','',h,flags=re.S)
 h=h.replace('<main id="seggi"', '\n'.join(pages)+'\n<main id="seggi"')
@@ -225,7 +232,7 @@ assert 'ricalcolo della serie e dei grafici è in corso' not in h
 (ROOT/'index.html').write_text(h)
 # Refresh offline assets whenever the generated page changes, including same-day edits.
 sw=(ROOT/'sw.js').read_text()
-sw=re.sub(r"const CACHE = '[^']+';", "const CACHE = 'voto27-v1-"+hashlib.sha256(h.encode()).hexdigest()[:12]+"';", sw)
+sw=re.sub(r"const CACHE = '[^']+';", "const CACHE = 'voto27-v1-"+hashlib.sha256(h.encode()+b''.join(p.read_bytes() for p in sorted((ROOT/'assets').glob('*')))).hexdigest()[:12]+"';", sw)
 (ROOT/'sw.js').write_text(sw)
 print(json.dumps({'as_of':as_of,'means':means,'left':left,'right':right,'polls':len(polls),'institutes':len(current['selected_polls']),'snapshots':len(series)},ensure_ascii=False,indent=2))
 

@@ -80,11 +80,26 @@ with tempfile.TemporaryDirectory() as directory:
     copy = Path(directory)
     shutil.copytree(ROOT / 'data', copy / 'data')
     shutil.copytree(ROOT / 'scripts', copy / 'scripts')
+    shutil.copytree(ROOT / 'assets', copy / 'assets')
     for name in ['index.html', 'sw.js']:
         shutil.copy(ROOT / name, copy / name)
     subprocess.run([sys.executable, str(copy / 'scripts/update_site.py')], check=True, stdout=subprocess.DEVNULL)
     for name in files:
         assert (copy / name).read_bytes() == (ROOT / name).read_bytes(), f'Non-reproducible: {name}'
-assert hashlib.sha256(html.encode()).hexdigest()[:12] in (ROOT / 'sw.js').read_text()
+assert hashlib.sha256(html.encode()+b''.join(p.read_bytes() for p in sorted((ROOT/'assets').glob('*')))).hexdigest()[:12] in (ROOT / 'sw.js').read_text()
 print(f'PASS: {len(feed["polls"])} schede, {len(current["selected_polls"])} istituti, '
       f'{len(derived["snapshots"])} snapshot; date, navigazione, medie, grafici e rigenerazione coerenti.')
+
+# Hosting and install assets must all resolve below the GitHub Pages subpath.
+assert 'https://changefilez.github.io/voto27/' in html
+assert 'voto27.netlify.app' not in html
+assert 'fixHomepageDate' not in (ROOT / 'sw.js').read_text()
+assert today.index('latest-card') < today.index('poles-summary')
+assert 'id="poll-search"' in html and 'data-poll-state=' in html
+manifest = json.loads((ROOT / 'manifest.webmanifest').read_text())
+assert manifest['scope'] == manifest['start_url'] == './'
+for icon in manifest['icons']:
+    assert not icon['src'].startswith('/') and (ROOT / icon['src']).is_file()
+for asset in ['assets/app.js','assets/enhancements.css','icons/apple-touch-icon.png','icons/share.png']:
+    assert (ROOT / asset).is_file()
+print('PASS: GitHub Pages paths, install assets, recent cards and archive controls.')

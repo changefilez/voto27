@@ -1,6 +1,6 @@
 # VOTO27 1.0
 
-Versione stabile per https://voto27.netlify.app/
+Versione stabile per https://changefilez.github.io/voto27/
 
 La 1.0 congela metodo v1, struttura mobile-first, storico annuale, scenario a due poli, gestione separata di affluenza/non risposta e predisposizione blackout.
 
@@ -12,7 +12,7 @@ Il controllo programmato di ChatGPT cerca nuove rilevazioni nazionali da fonti p
 
 Per pubblicare un nuovo sondaggio aggiornare `data/polls.json` e rigenerare la pagina con `python scripts/update_site.py`: selettori, schede, archivio, fonti, medie, poli, grafici e metadati derivano dal feed. `data/new_poll_template.json` usa lo stesso schema: `values` contiene soltanto le chiavi dei partiti verificate, senza valori nulli o inventati. Lo script aggiorna `data/config.json` e il CONFIG incorporato quando cambia la data dell'ultimo dato incluso. Non alterare date o medie soltanto perché è trascorso un giorno. Se manca una tabella completa si aggiornano i soli indicatori calcolabili sui valori verificati, dichiarando la copertura; gli indicatori incompatibili restano fuori media. Un impedimento su una fonte non blocca gli altri valori affidabili: escludere soltanto quanto non verificabile e segnalare la lacuna.
 
-Il push su `main` attiva la distribuzione Netlify. Prima di pubblicare, controllare che l'HTML sia valido, gli identificatori delle schede siano unici, i collegamenti alle fonti funzionino e le cifre visibili siano coerenti con le rilevazioni utilizzate. Durante un eventuale periodo di blackout elettorale applicabile, non pubblicare nuovi sondaggi.
+Il push su `main` esegue i controlli e pubblica su GitHub Pages tramite `.github/workflows/pages.yml`. Il deployment contiene soltanto i file pubblici preparati in `_site/`. Prima di pubblicare, controllare che l'HTML sia valido, gli identificatori delle schede siano unici, i collegamenti alle fonti funzionino e le cifre visibili siano coerenti con le rilevazioni utilizzate. Durante un eventuale periodo di blackout elettorale applicabile, non pubblicare nuovi sondaggi.
 
 ## Rigenerazione verificabile
 
@@ -29,3 +29,13 @@ La data della media (`data_last_update`) è l’ultima pubblicazione comparabile
 Eseguire `python scripts/check_site.py` dopo la rigenerazione per controllare date, navigazione, selezione degli istituti, valori visibili e grafici, oltre alla riproducibilità della generazione. La cache offline viene aggiornata quando cambia l’HTML generato.
 
 Dal 12 ottobre 2026, su scelta dell’utente, Futuro Nazionale è valutato separatamente come Azione: escluso da entrambi i poli. Tutti gli snapshot ricostruibili sono ricalcolati con questa composizione uniforme; rilevazioni e medie dei singoli partiti restano invariate.
+
+## GitHub Pages come sito principale
+
+Indirizzo canonico: https://changefilez.github.io/voto27/. Il repository deve usare **Settings → Pages → Source: GitHub Actions**. Il workflow blocca la pubblicazione in caso di medie incoerenti, rigenerazione non riproducibile o errori nel service worker. I riferimenti a Netlify non sono più usati da pagine, metadati o errori 404. La configurazione o il reindirizzamento del vecchio dominio Netlify si gestiscono nel relativo account e non sono modificati da questo repository.
+
+La home presenta quattro schede recenti prima delle medie; l’archivio permette ricerca per istituto/data e filtro di inclusione. Gli hash consentono collegamenti diretti alle sezioni e ai sondaggi. Il tasto Indietro ripristina la navigazione. La data di verifica non viene aggiornata solo perché cambia il giorno. Il benchmark YouTrend è generato staticamente, separato dalla media.
+
+Il service worker conserva risposte originali, senza riscrivere date o aggiungere valori. Preferisce la rete e ripiega sulla copia salvata offline o dopo 4,5 secondi di connessione lenta. I percorsi sono relativi allo scope, quindi funzionano in `/voto27/`. Per aggiornare manualmente usare **Aggiorna**. Icone PNG incluse per iOS e Android. Non è garantita la migrazione automatica delle installazioni dalla precedente origine Netlify.
+
+Controlli locali: `python scripts/check_site.py`, `node --check assets/app.js`, `node --check sw.js`, `node scripts/check_worker.mjs`. Preparazione dei file pubblici: `python scripts/build_site.py`. Nessuna dipendenza esterna necessaria per rigenerare o validare.
