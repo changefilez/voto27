@@ -1,5 +1,5 @@
 /* Cache exact responses only. Poll dates and figures are generated together. */
-const CACHE = 'voto27-v1-ae36635ae251';
+const CACHE = 'voto27-v1-89ea18bdd0ac';
 const BASE = new URL('./', self.registration.scope);
 const asset = path => new URL(path, BASE).href;
 const ASSETS = ['index.html', 'assets/app.js', 'assets/enhancements.css',
@@ -46,3 +46,4 @@ self.addEventListener('fetch', event => {
     } finally { clearTimeout(timer); }
   })());
 });
+

@@ -1,5 +1,5 @@
 {
-  "verified_on": "2026-10-29",
+  "verified_on": "2026-10-30",
   "polls": [
     {
       "id": "bidimedia-2026-08-24",
@@ -1969,9 +1969,42 @@
       },
       "corroborating_source": "https://alphabetcity.it/2026/10/28/sondaggi-politici-oggi-28-ottobre-2026-only-numbers/",
       "note": "Scenario esplicitamente condizionato a Giuseppe Conte candidato premier del campo largo, diffuso a Porta a Porta il 27 ottobre. La diversa formulazione altera la comparabilità con le intenzioni di voto ordinarie: scheda pubblicata ma esclusa da medie e trend. Periodo delle interviste, metodo e campione non risultano ancora disponibili; la categoria congiunta «astenuti e indecisi» non viene separata né reinterpretata."
+    },
+    {
+      "id": "eumetra-2026-10-29",
+      "institute": "eumetra",
+      "published": "2026-10-29",
+      "values": {
+        "fdi": 28.1,
+        "pd": 20.3,
+        "m5s": 12.1,
+        "fn": 6.5,
+        "fi": 7.4,
+        "avs": 6.4,
+        "lega": 5.8,
+        "azione": 3.2,
+        "iv": 2.3,
+        "europa": 1.7,
+        "nm": 1.0
+      },
+      "comparable": true,
+      "source": "https://www.la7play.it/piazzapulita/puntate/puntata-del-29-10-2026-398274",
+      "source_kind": "committente La7 / Piazzapulita: Eumetra",
+      "fieldwork": [
+        "2026-10-27",
+        "2026-10-28"
+      ],
+      "method": null,
+      "sample": 800,
+      "extra_values": {
+        "Sud Chiama Nord": 1.0,
+        "Altri": 4.2
+      },
+      "corroborating_source": "https://www.pollingforecast.com/it/polls?lang=it&tab=trend",
+      "note": "Diffuso nella puntata di Piazzapulita del 29 ottobre. Tavola nazionale completa e periodo 27–28 ottobre riscontrati in due archivi indipendenti; il committente conserva la puntata integrale. Campione di 800 interviste. Il metodo di raccolta, la quota di non risposta e il margine d’errore non risultano ancora pubblicati nelle fonti accessibili e restano esplicitamente mancanti."
     }
   ],
-  "verification_note": "Controllo del 29 ottobre 2026: nessuna nuova rilevazione nazionale comparabile successiva a SWG del 26 ottobre. Completati i metadati della rilevazione Only Numbers diffusa il 23 ottobre con metodo CAWI, quota congiunta indecisi-astensione, non rispondenti e margine d’errore ora disponibili nel registro ufficiale; la data originaria non cambia. Medie e grafici restano al 26 ottobre perché la correzione metodologica non modifica i valori di voto già inclusi."
+  "verification_note": "Controllo del 30 ottobre 2026: inserita la nuova rilevazione nazionale comparabile Eumetra diffusa a Piazzapulita il 29 ottobre, con interviste del 27–28 ottobre e campione di 800 casi. Metodo, non risposta e margine restano esplicitamente mancanti finché non saranno pubblicati nella scheda tecnica o nel registro ufficiale. Medie e grafici avanzano al 29 ottobre applicando la selezione dell’ultima rilevazione per istituto e i pesi temporali v1."
 }
 
 
