@@ -1,5 +1,5 @@
 {
-  "verified_on": "2026-10-30",
+  "verified_on": "2026-10-31",
   "polls": [
     {
       "id": "bidimedia-2026-08-24",
@@ -2002,9 +2002,78 @@
       },
       "corroborating_source": "https://www.pollingforecast.com/it/polls?lang=it&tab=trend",
       "note": "Diffuso nella puntata di Piazzapulita del 29 ottobre. Tavola nazionale completa e periodo 27–28 ottobre riscontrati in due archivi indipendenti; il committente conserva la puntata integrale. Campione di 800 interviste. Il metodo di raccolta, la quota di non risposta e il margine d’errore non risultano ancora pubblicati nelle fonti accessibili e restano esplicitamente mancanti."
+    },
+    {
+      "id": "quorum-2026-10-30",
+      "institute": "quorum",
+      "published": "2026-10-30",
+      "values": {
+        "fdi": 28.1,
+        "pd": 19.9,
+        "m5s": 13.5,
+        "fn": 7.0,
+        "fi": 7.0,
+        "avs": 6.4,
+        "lega": 5.0,
+        "azione": 3.4,
+        "iv": 2.7,
+        "nm": 1.0
+      },
+      "comparable": true,
+      "source": "https://tg24.sky.it/politica/2026/10/30/decreto-sicurezza-manifestazioni-dati-sondaggio",
+      "source_kind": "committente Sky TG24: YouTrend",
+      "fieldwork": [
+        "2026-10-27",
+        "2026-10-28"
+      ],
+      "method": "CAWI",
+      "sample": 810,
+      "nonresponse": {
+        "label": "Indecisi e astenuti",
+        "value": 33.9
+      },
+      "extra_values": {
+        "Ora!": 1.2,
+        "Sud Chiama Nord": 0.8,
+        "Altre liste di centrosinistra": 1.5,
+        "Altri partiti": 2.5
+      },
+      "primary_source": "https://it.linkedin.com/posts/youtrend_secondo-il-sondaggio-odierno-di-youtrend-activity-7521891637472522240-jyfJ",
+      "note": "Diffuso il 30 ottobre da YouTrend e dal committente Sky TG24. Campione nazionale rappresentativo per quote di genere ed età, stratificate per titolo di studio e ripartizione ISTAT; margine dichiarato ±3,4% al 95%. La fonte non pubblica +Europa separatamente ma la comprende nelle «altre liste di centrosinistra»: la scheda contribuisce soltanto ai partiti indicati, senza recuperare o inventare il valore mancante. La categoria congiunta «indecisi e astenuti» resta riportata come tale."
+    },
+    {
+      "id": "termometro-2026-10-30",
+      "institute": "termometro",
+      "published": "2026-10-30",
+      "values": {
+        "fdi": 28.1,
+        "pd": 20.8,
+        "m5s": 12.5,
+        "fn": 7.1,
+        "fi": 7.5,
+        "avs": 6.3,
+        "lega": 5.6,
+        "azione": 2.9,
+        "iv": 2.4,
+        "europa": 1.6,
+        "nm": 1.0
+      },
+      "comparable": true,
+      "source": "https://www.termometropolitico.it/90003_sondaggi-politici-tp-30-10-2026.html",
+      "source_kind": "fonte primaria Termometro Politico",
+      "fieldwork": [
+        "2026-10-27",
+        "2026-10-29"
+      ],
+      "method": "CAWI",
+      "sample": 2700,
+      "extra_values": {
+        "Altri": 4.2
+      },
+      "note": "Valori e nota metodologica pubblicati direttamente da Termometro Politico il 30 ottobre: 2.700 interviste CAWI raccolte dal 27 al 29 ottobre. La data della scheda segue la prima diffusione, non il solo termine del fieldwork. Quota di non risposta e margine d’errore non risultano pubblicati e restano mancanti."
     }
   ],
-  "verification_note": "Controllo del 30 ottobre 2026: inserita la nuova rilevazione nazionale comparabile Eumetra diffusa a Piazzapulita il 29 ottobre, con interviste del 27–28 ottobre e campione di 800 casi. Metodo, non risposta e margine restano esplicitamente mancanti finché non saranno pubblicati nella scheda tecnica o nel registro ufficiale. Medie e grafici avanzano al 29 ottobre applicando la selezione dell’ultima rilevazione per istituto e i pesi temporali v1."
+  "verification_note": "Controllo del 31 ottobre 2026: inserite le nuove rilevazioni nazionali comparabili diffuse il 30 ottobre da YouTrend per Sky TG24 e da Termometro Politico. Per YouTrend +Europa non è pubblicata separatamente e non viene ricostruita dalla categoria aggregata «altre liste di centrosinistra»; la scheda contribuisce ai soli partiti disponibili. Per Termometro Politico quota di non risposta e margine restano esplicitamente mancanti. Medie e grafici avanzano al 30 ottobre applicando la selezione dell’ultima rilevazione per istituto e i pesi temporali v1."
 }
 
 

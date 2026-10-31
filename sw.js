@@ -1,5 +1,5 @@
 /* Cache exact responses only. Poll dates and figures are generated together. */
-const CACHE = 'voto27-v1-89ea18bdd0ac';
+const CACHE = 'voto27-v1-63feb277e558';
 const BASE = new URL('./', self.registration.scope);
 const asset = path => new URL(path, BASE).href;
 const ASSETS = ['index.html', 'assets/app.js', 'assets/enhancements.css',
