@@ -1,5 +1,5 @@
 {
-  "verified_on": "2026-10-31",
+  "verified_on": "2026-11-01",
   "polls": [
     {
       "id": "bidimedia-2026-08-24",
@@ -2071,9 +2071,74 @@
         "Altri": 4.2
       },
       "note": "Valori e nota metodologica pubblicati direttamente da Termometro Politico il 30 ottobre: 2.700 interviste CAWI raccolte dal 27 al 29 ottobre. La data della scheda segue la prima diffusione, non il solo termine del fieldwork. Quota di non risposta e margine d’errore non risultano pubblicati e restano mancanti."
+    },
+    {
+      "id": "ipsos-2026-10-31",
+      "institute": "ipsos",
+      "published": "2026-10-31",
+      "values": {
+        "fdi": 26.7,
+        "pd": 19.9,
+        "m5s": 14.9,
+        "fn": 7.9,
+        "fi": 6.3,
+        "avs": 6.3,
+        "lega": 5.6,
+        "azione": 3.0,
+        "iv": 2.0,
+        "europa": 1.8,
+        "nm": 0.8
+      },
+      "comparable": true,
+      "source": "https://www.corriere.it/politica/26_ottobre_31/sondaggio-pagnoncelli-vannacci-cala-921bc1e9-787e-4da2-9c1e-b28d12264xlk.shtml",
+      "source_kind": "committente Corriere della Sera: Ipsos",
+      "fieldwork": [
+        "2026-10-26",
+        "2026-10-29"
+      ],
+      "method": null,
+      "sample": 1000,
+      "extra_values": {
+        "Altri": 4.8
+      },
+      "corroborating_source": "https://www.pollingforecast.com/it/polls/1001161?lang=it",
+      "note": "Prima diffusione sul Corriere della Sera il 31 ottobre; il 29 ottobre è la fine delle interviste e non viene usato come data di pubblicazione. Valori verificati nelle tavole originali del committente; periodo 26–29 ottobre e campione di 1.000 casi riscontrati in archivi indipendenti. Il metodo specifico della rilevazione non è indicato nei materiali primari accessibili e resta mancante. Il testo descrive congiuntamente incertezza e astensione come «quasi il 41%», senza un valore esatto separabile: non viene trasformato in una misura numerica."
+    },
+    {
+      "id": "lab21-2026-10-31",
+      "institute": "lab21",
+      "published": "2026-10-31",
+      "values": {
+        "fdi": 28.4,
+        "pd": 20.1,
+        "m5s": 13.0,
+        "fn": 7.6,
+        "fi": 6.8,
+        "lega": 5.8,
+        "avs": 5.7,
+        "azione": 3.1,
+        "iv": 2.5,
+        "europa": 1.1,
+        "nm": 1.0
+      },
+      "comparable": true,
+      "source": "https://www.affaritaliani.it/politica/sondaggi-meloni-sale-al-549-ma-il-governo-frena-testa-a-testa-tra-i-poli-al-437.html",
+      "source_kind": "committente Affaritaliani: Lab21",
+      "fieldwork": [
+        "2026-10-23",
+        "2026-10-30"
+      ],
+      "method": "CATI/CAMI/CAWI",
+      "sample": 1009,
+      "extra_values": {
+        "Sud Chiama Nord": 1.7,
+        "Progetto Civico Italia": 1.3,
+        "Altri partiti": 1.9
+      },
+      "note": "Monitoraggio Trex1000 diffuso dal committente il 31 ottobre. Campione probabilistico nazionale con estrazione randomica e ponderazione sociodemografica: 5.007 contatti, 1.009 interviste valide e complete e 3.998 non rispondenti o sostituzioni; margine dichiarato ±3,0% al 95%. Le aggregazioni Centrodestra 43,7% e Centrosinistra 43,7% restano separate dalle medie VOTO27."
     }
   ],
-  "verification_note": "Controllo del 31 ottobre 2026: inserite le nuove rilevazioni nazionali comparabili diffuse il 30 ottobre da YouTrend per Sky TG24 e da Termometro Politico. Per YouTrend +Europa non è pubblicata separatamente e non viene ricostruita dalla categoria aggregata «altre liste di centrosinistra»; la scheda contribuisce ai soli partiti disponibili. Per Termometro Politico quota di non risposta e margine restano esplicitamente mancanti. Medie e grafici avanzano al 30 ottobre applicando la selezione dell’ultima rilevazione per istituto e i pesi temporali v1."
+  "verification_note": "Controllo del 1° novembre 2026: inserite le nuove rilevazioni nazionali comparabili diffuse il 31 ottobre da Ipsos per il Corriere della Sera e da Lab21 per Affaritaliani. Per Ipsos valori verificati nelle tavole originali, periodo e campione riscontrati in archivi indipendenti; il metodo specifico resta mancante e la categoria approssimativa congiunta di incertezza e astensione non viene reinterpretata. Per Lab21 sono riportati campione, metodo, periodo e valori completi della pubblicazione del committente. Medie e grafici avanzano al 31 ottobre applicando la selezione dell’ultima rilevazione per istituto e i pesi temporali v1."
 }
 
 
