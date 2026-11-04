@@ -1,5 +1,5 @@
 {
-  "verified_on": "2026-11-03",
+  "verified_on": "2026-11-04",
   "polls": [
     {
       "id": "bidimedia-2026-08-24",
@@ -2172,9 +2172,92 @@
         "Altri centrosinistra": 2.1
       },
       "note": "Rilevazione SWG diffusa dal committente TG La7 il 2 novembre. Interviste miste CATI/CAMI/CAWI dal 28 ottobre al 2 novembre su 1.200 maggiorenni residenti in Italia; margine dichiarato ±2,8% al 95%. La fonte aggrega Azione con Spazio Pubblico al 3,1%: il valore contribuisce al solo indicatore Azione. La voce «Non si esprime» resta separata e non viene reinterpretata come astensione, indecisione o non risposta tecnica."
+    },
+    {
+      "id": "bidimedia-2026-11-02",
+      "institute": "bidimedia",
+      "published": "2026-11-02",
+      "values": {
+        "fdi": 26.6,
+        "pd": 20.6,
+        "m5s": 12.0,
+        "fn": 6.7,
+        "fi": 7.2,
+        "avs": 6.7,
+        "lega": 5.4,
+        "azione": 3.0,
+        "iv": 1.9,
+        "europa": 0.8,
+        "nm": 1.0
+      },
+      "comparable": true,
+      "source": "https://sondaggibidimedia.it/2026/10/22/sondaggio-bidimedia-30-ottobre-2026-2/",
+      "source_kind": "fonte primaria BiDiMedia",
+      "fieldwork": [
+        "2026-10-27",
+        "2026-10-30"
+      ],
+      "method": "CAWI/panel",
+      "sample": 1000,
+      "nonresponse": {
+        "label": "Indecisi",
+        "value": 24.0
+      },
+      "extra_values": {
+        "Sud Chiama Nord": 1.3,
+        "Progetto Civico Italia": 1.0,
+        "Avanti-PSI": 1.0,
+        "Potere al Popolo": 0.8,
+        "Ora!": 0.7,
+        "Partito Liberaldemocratico": 0.7,
+        "Rifondazione Comunista": 0.7,
+        "UDC": 0.5,
+        "Altre liste": 1.4,
+        "Schede bianche e nulle": 1.9
+      },
+      "note": "Rilevazione BiDiMedia datata 30 ottobre e diffusa il 2 novembre. Mille interviste CAWI da panel raccolte dal 27 al 30 ottobre su un campione nazionale rappresentativo, ponderato anche per voto pregresso; tasso di risposta utile 58% e margine dichiarato ±3,1% al 95%. L'affluenza stimata 55–59%, gli indecisi e le schede bianche o nulle restano categorie distinte. Le aggregazioni pubblicate sono somme aritmetiche e non vengono usate al posto dei poli VOTO27."
+    },
+    {
+      "id": "only-2026-11-03",
+      "institute": "only",
+      "published": "2026-11-03",
+      "values": {
+        "fdi": 27.8,
+        "pd": 20.3,
+        "m5s": 11.6,
+        "fn": 6.8,
+        "fi": 7.6,
+        "avs": 6.2,
+        "lega": 6.3,
+        "azione": 3.2,
+        "iv": 2.4,
+        "europa": 1.3,
+        "nm": 1.3
+      },
+      "comparable": true,
+      "source": "https://www.tuttigiornali.it/intenzioni-di-voto-sondaggio-only-numbers/",
+      "source_kind": "riproduzione della scheda autorizzata RTI / Realpolitik: Only Numbers",
+      "fieldwork": [
+        "2026-10-28",
+        "2026-11-02"
+      ],
+      "method": "CAWI",
+      "sample": null,
+      "nonresponse": {
+        "label": "Indecisi - Astensione",
+        "value": 43.0
+      },
+      "extra_values": {
+        "Progetto Civico": 1.1,
+        "Sud Chiama Nord": 0.8,
+        "Più Uno": 0.4,
+        "Altri": 2.9
+      },
+      "corroborating_source": "https://sondaggibidimedia.com/sondaggio-only-numbers-politiche-29-ottobre-2026/",
+      "note": "Sondaggio Only Numbers per RTI/Realpolitik pubblicato il 3 novembre, con interviste dal 28 ottobre al 2 novembre. Metodo CAWI, campione casuale nazionale rappresentativo e margine dichiarato ±3,5% al 95%; la numerosità del campione non risulta indicata nelle fonti accessibili e resta esplicitamente mancante. La categoria congiunta «Indecisi - Astensione» è mantenuta senza separazioni o reinterpretazioni. Only Numbers e Realpolitik restano un unico istituto."
     }
   ],
-  "verification_note": "Controllo del 3 novembre 2026: inserita la nuova rilevazione nazionale comparabile SWG diffusa il 2 novembre da TG La7. Valori verificati nelle tavole del committente; periodo, metodo, campione e margine riscontrati nella nota metodologica contemporanea. La voce «Non si esprime» resta separata e non viene reinterpretata; Azione con Spazio Pubblico contribuisce al solo indicatore Azione. Medie e grafici avanzano al 2 novembre applicando la selezione dell’ultima rilevazione per istituto e i pesi temporali v1."
+  "verification_note": "Controllo del 4 novembre 2026: inserite le rilevazioni nazionali comparabili BiDiMedia diffusa il 2 novembre e Only Numbers/Realpolitik pubblicata il 3 novembre. Per BiDiMedia valori e nota metodologica sono verificati nella fonte primaria; indecisi, affluenza e schede bianche o nulle restano distinti. Per Only Numbers valori, periodo e metodo sono corroborati da due fonti contemporanee; la numerosità del campione non è disponibile e resta esplicitamente mancante, mentre «Indecisi - Astensione» non viene separato. Medie e grafici avanzano al 3 novembre con l'ultima rilevazione per istituto e i pesi temporali v1."
 }
 
 
