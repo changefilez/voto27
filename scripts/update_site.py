@@ -14,7 +14,7 @@ PARTIES = dict(zip('fdi pd m5s fn fi avs lega azione iv europa nm'.split(),
 NAMES = {'swg':'SWG','ipsos':'Ipsos Doxa','quorum':'Quorum–YouTrend','piepoli':'Istituto Piepoli',
          'only':'Only Numbers','emg':'EMG Different','eumetra':'Eumetra','termometro':'Termometro Politico',
          'tecne':'Tecnè','bidimedia':'BiDiMedia','winpoll':'Winpoll','noto':'Noto','ixe':'Ixè',
-         'cluster17':'Cluster17','lab21':'Lab21','piave':'Piave'}
+         'cluster17':'Cluster17','lab21':'Lab21','piave':'Piave','excellera':'Excellera Advisory Group'}
 LEFT = ['pd','m5s','avs','iv','europa']
 RIGHT = ['fdi','lega','fi','nm']
 ROOT = Path(__file__).resolve().parents[1]
@@ -218,6 +218,7 @@ PALETTE = {
     'cluster17': ('e9f0fa','86a7d0','31557d'),
     'lab21': ('fff0dc','d6a45d','704b18'),
     'piave': ('e8f5ed','80b796','285e3d'),
+    'excellera': ('e9f2ee','83ad9a','2c5d4c'),
 }
 palette_css = ''.join('.verified-poll[data-institute="'+key+'"]{--poll-bg:#'+bg+';--poll-accent:#'+accent+';--poll-ink:#'+ink+'}' for key,(bg,accent,ink) in PALETTE.items())
 party_css = '#oggi .soft-stat{color:#18212b}#oggi .soft-stat.green{background:#eff8f3}#oggi .soft-stat .lab{color:#475569 !important}#oggi .soft-stat .stat-name{color:#25364a !important}#oggi .soft-stat .num{color:#18212b !important}'+'#oggi .party summary,#oggi .party summary .pname,#oggi .party summary b{color:#f4f6f8 !important}#oggi .party[open]{background:#1b2631}#oggi .party .party-detail{color:#c5ccd5 !important}#oggi .party summary:focus-visible{outline:2px solid #9cc4e5;outline-offset:2px;border-radius:12px}#oggi .party summary .pname::after{content:"⌄";font-size:14px;color:#a9c9e7;margin-left:4px}#oggi .party[open] summary .pname::after{content:"⌃"}@media(hover:hover) and (pointer:fine){#oggi .party:hover{background:#1b2631}}'
