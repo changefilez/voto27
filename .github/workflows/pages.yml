@@ -27,6 +27,8 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Regenerate static site from verified poll feed
+        run: python scripts/update_site.py
       - name: Validate data, navigation and reproducibility
         run: python scripts/check_site.py
       - name: Check JavaScript and offline behavior
