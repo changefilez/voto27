@@ -1,5 +1,5 @@
 {
-  "verified_on": "2026-11-18",
+  "verified_on": "2026-11-25",
   "polls": [
     {
       "id": "bidimedia-2026-08-24",
@@ -2894,9 +2894,416 @@
       },
       "corroborating_source": "https://www.pollingforecast.com/it/polls/1001467?lang=it",
       "note": "Rilevazione SWG diffusa dal committente La7 il 16 novembre, con 1.200 interviste miste CATI/CAMI/CAWI dall'11 al 16 novembre. La7 pubblica valori e coalizioni; periodo, campione e metodo sono corroborati dal riepilogo metodologico contemporaneo. La quota di non risposta non risulta riportata nella pagina consultabile e resta mancante."
+    },
+    {
+      "id": "emg-2026-11-17",
+      "institute": "emg",
+      "published": "2026-11-17",
+      "values": {
+        "fdi": 26.2,
+        "pd": 20.6,
+        "m5s": 12.0,
+        "fi": 7.4,
+        "lega": 7.1,
+        "avs": 5.5,
+        "fn": 5.2,
+        "azione": 3.0,
+        "iv": 2.8,
+        "nm": 1.7,
+        "europa": 1.3
+      },
+      "comparable": true,
+      "source": "https://sondaggibidimedia.com/sondaggio-emg-politiche-18-novembre-2026/",
+      "source_kind": "tavola EMG Different diffusa dal TG3",
+      "fieldwork": [
+        "2026-11-16",
+        "2026-11-17"
+      ],
+      "method": "panel telematico",
+      "sample": 1000,
+      "turnout": {
+        "label": "Affluenza stimata",
+        "value": 62.0
+      },
+      "extra_values": {
+        "Partito Liberaldemocratico": 1.5,
+        "Sud Chiama Nord": 1.1,
+        "Altri centrosinistra": 1.1,
+        "UDC": 0.7,
+        "Ora!": 0.5,
+        "Altra lista": 2.3
+      },
+      "corroborating_source": "https://www.pollingforecast.com/it/polls/1001503?lang=it",
+      "note": "Rilevazione EMG Different diffusa dal TG3 il 17 novembre: panel telematico, 1.000 casi raccolti il 16 e 17 novembre, campione rappresentativo per sesso, età, regione, ampiezza comunale e istruzione. Intervallo fiduciario dichiarato ±3,1%; 5.269 contatti e tasso di risposta 19%. L'affluenza è mantenuta separata dalle intenzioni di voto."
+    },
+    {
+      "id": "piave-2026-11-17-delphi",
+      "institute": "piave",
+      "published": "2026-11-17",
+      "values": {
+        "fdi": 26.6,
+        "pd": 20.4,
+        "m5s": 14.4,
+        "fi": 7.1,
+        "fn": 6.7,
+        "lega": 6.6,
+        "avs": 5.3,
+        "azione": 2.9,
+        "iv": 2.4,
+        "europa": 1.6,
+        "nm": 0.8
+      },
+      "comparable": true,
+      "source": "https://www.fanpage.it/politica/sondaggi-politici-schlein-sorpassa-conte-alle-primarie-campo-largo-ancora-in-vantaggio-sul-centrodestra/",
+      "source_kind": "prima diffusione esclusiva Fanpage: Osservatorio Delphi",
+      "fieldwork": [
+        "2026-11-09",
+        "2026-11-13"
+      ],
+      "method": "CAWI",
+      "sample": 800,
+      "extra_values": {
+        "Altre liste": 5.2
+      },
+      "corroborating_source": "https://sondaggibidimedia.com/sondaggio-signa-piave-17-novembre-2026/",
+      "note": "Osservatorio Delphi, realizzato da Piave Digital Agency e Sigma Consulting e diffuso in esclusiva da Fanpage il 17 novembre. Ottocento interviste CAWI dal 9 al 13 novembre, campione nazionale del panel Sigma Consulting rappresentativo per quote di genere, età, area, titolo di studio e comportamento di voto."
+    },
+    {
+      "id": "piepoli-2026-11-17-fn-fuori",
+      "institute": "piepoli",
+      "published": "2026-11-17",
+      "values": {
+        "fdi": 28.0,
+        "pd": 20.5,
+        "m5s": 12.5,
+        "fi": 7.0,
+        "fn": 6.5,
+        "avs": 6.0,
+        "lega": 5.5,
+        "azione": 3.0,
+        "iv": 3.0,
+        "nm": 1.5,
+        "europa": 1.0
+      },
+      "comparable": false,
+      "exclusion_reason": "scenario condizionato a Futuro Nazionale fuori dal centrodestra",
+      "source": "https://sondaggibidimedia.com/sondaggio-piepoli-17-novembre-2026/",
+      "source_kind": "riproduzione della tavola Istituto Piepoli",
+      "fieldwork": [
+        "2026-11-16",
+        "2026-11-16"
+      ],
+      "method": "CATI/CAMI/CAWI",
+      "sample": 500,
+      "nonresponse": {
+        "label": "Indecisi e astenuti",
+        "value": 33.0
+      },
+      "extra_values": {
+        "Sud Chiama Nord": 1.5,
+        "Partito Liberaldemocratico": 1.5,
+        "Altri": 2.5
+      },
+      "primary_source": "https://www.sondaggipoliticoelettorali.it/",
+      "note": "Scenario Piepoli costruito esplicitamente con Futuro Nazionale fuori dal centrodestra. La condizione modifica la distribuzione dei voti: la scheda è pubblicata ma esclusa da medie e trend. Indagine mista su 500 maggiorenni il 16 novembre, stratificata per genere, età, GRG e ampiezza dei centri. La categoria congiunta indecisi e astenuti resta indivisa."
+    },
+    {
+      "id": "piepoli-2026-11-17-fn-dentro",
+      "institute": "piepoli",
+      "published": "2026-11-17",
+      "values": {
+        "fdi": 29.0,
+        "pd": 21.0,
+        "m5s": 12.5,
+        "fi": 6.5,
+        "lega": 6.0,
+        "avs": 6.0,
+        "fn": 5.5,
+        "azione": 3.0,
+        "iv": 3.0,
+        "nm": 1.0,
+        "europa": 1.0
+      },
+      "comparable": false,
+      "exclusion_reason": "scenario condizionato a Futuro Nazionale nel centrodestra",
+      "source": "https://sondaggibidimedia.com/sondaggio-piepoli-17-novembre-2026/",
+      "source_kind": "riproduzione della tavola Istituto Piepoli",
+      "fieldwork": [
+        "2026-11-16",
+        "2026-11-16"
+      ],
+      "method": "CATI/CAMI/CAWI",
+      "sample": 500,
+      "nonresponse": {
+        "label": "Indecisi e astenuti",
+        "value": 33.0
+      },
+      "extra_values": {
+        "Sud Chiama Nord": 1.5,
+        "Partito Liberaldemocratico": 1.5,
+        "Altri": 2.5
+      },
+      "primary_source": "https://www.sondaggipoliticoelettorali.it/",
+      "note": "Scenario Piepoli costruito esplicitamente con Futuro Nazionale nel centrodestra. La condizione modifica la distribuzione dei voti: la scheda è pubblicata ma esclusa da medie e trend. Indagine mista su 500 maggiorenni il 16 novembre, stratificata per genere, età, GRG e ampiezza dei centri. La categoria congiunta indecisi e astenuti resta indivisa."
+    },
+    {
+      "id": "quorum-2026-11-18",
+      "institute": "quorum",
+      "published": "2026-11-18",
+      "values": {
+        "fdi": 27.2,
+        "pd": 20.6,
+        "m5s": 13.7,
+        "fn": 6.6,
+        "fi": 6.6,
+        "avs": 6.4,
+        "lega": 5.3,
+        "azione": 3.3,
+        "iv": 2.8
+      },
+      "comparable": true,
+      "source": "https://tg24.sky.it/cronaca/2026/11/18/cybersicurezza-sondaggio-italiani-rischi-dati",
+      "source_kind": "committente Sky TG24: YouTrend",
+      "fieldwork": [
+        "2026-11-14",
+        "2026-11-16"
+      ],
+      "method": "CAWI",
+      "sample": 810,
+      "nonresponse": {
+        "label": "Indecisi e astenuti",
+        "value": 33.2
+      },
+      "extra_values": {
+        "Altri centrodestra": 1.7,
+        "Altri centrosinistra": 1.5,
+        "Ora!": 1.1,
+        "Altri": 3.2
+      },
+      "corroborating_source": "https://sondaggibidimedia.com/sondaggio-youtrend-18-novembre-2026/",
+      "note": "YouTrend per Sky TG24 diffuso il 18 novembre. Ottocentodieci interviste CAWI dal 14 al 16 novembre, campione per quote di genere ed età stratificate per titolo di studio e ripartizione ISTAT; margine dichiarato ±3,4% al 95%. +Europa e Noi Moderati non sono pubblicati separatamente e non vengono recuperati dalla scheda precedente. La categoria congiunta indecisi e astenuti resta indivisa."
+    },
+    {
+      "id": "lab21-2026-11-18-riformista",
+      "institute": "lab21",
+      "published": "2026-11-18",
+      "values": {
+        "fdi": 28.1,
+        "pd": 20.1,
+        "m5s": 13.0,
+        "fn": 6.6,
+        "fi": 6.6,
+        "avs": 5.8,
+        "lega": 5.7,
+        "azione": 4.2,
+        "iv": 2.5,
+        "europa": 1.2,
+        "nm": 0.9
+      },
+      "comparable": true,
+      "source": "https://www.ilriformista.it/sondaggio-lab21-azione-con-il-centro-decolla-42-puo-essere-lago-della-bilancia-538984/",
+      "source_kind": "committente Il Riformista: Lab21",
+      "fieldwork": [
+        "2026-11-10",
+        "2026-11-17"
+      ],
+      "method": "CATI/CAMI/CAWI",
+      "sample": 1006,
+      "turnout": {
+        "label": "Affluenza stimata",
+        "value": 58.8
+      },
+      "nonresponse": {
+        "label": "Indecisi tra chi dichiara che andrebbe a votare",
+        "value": 28.9
+      },
+      "extra_values": {
+        "Sud Chiama Nord": 1.6,
+        "Progetto Civico Italia": 1.3,
+        "Partito Liberaldemocratico": 1.1,
+        "Altri": 1.3
+      },
+      "note": "Politicometro Lab21 pubblicato dal committente Il Riformista il 18 novembre. 1.006 interviste valide CATI/CAMI/CAWI dal 10 al 17 novembre, campione probabilistico casuale stratificato e ponderato; margine dichiarato ±3 punti al 95%. Affluenza e indecisi sono mantenuti come indicatori separati; il dato sugli indecisi riguarda soltanto chi dichiara che andrebbe a votare."
+    },
+    {
+      "id": "eumetra-2026-11-19",
+      "institute": "eumetra",
+      "published": "2026-11-19",
+      "values": {
+        "fdi": 27.9,
+        "pd": 20.8,
+        "m5s": 12.0,
+        "fi": 7.3,
+        "avs": 6.3,
+        "fn": 6.1,
+        "lega": 5.9,
+        "azione": 3.0,
+        "iv": 2.4,
+        "europa": 1.4,
+        "nm": 1.0
+      },
+      "comparable": true,
+      "source": "https://sondaggibidimedia.com/sondaggio-eumetra-18-novembre-2026/",
+      "source_kind": "tavola Eumetra per Piazzapulita e dati del registro ufficiale",
+      "fieldwork": [
+        "2026-11-17",
+        "2026-11-18"
+      ],
+      "method": "CAWI",
+      "sample": 800,
+      "extra_values": {
+        "Altri centrosinistra": 1.6,
+        "Sud Chiama Nord": 1.0,
+        "Altri": 3.3
+      },
+      "primary_source": "https://www.sondaggipoliticoelettorali.it/",
+      "corroborating_source": "https://www.termometropolitico.it/1635240_sondaggi-elettorali-centrodestra-eumetra.html",
+      "note": "Eumetra per Piazzapulita, prima diffusa nella puntata del 19 novembre e registrata ufficialmente. Ottocento interviste CAWI il 17 e 18 novembre, campione casuale stratificato per quote; margine dichiarato ±4%. Il nome Eumetra è mantenuto distinto da Euromedia."
+    },
+    {
+      "id": "noto-2026-11-19-schlein",
+      "institute": "noto",
+      "published": "2026-11-19",
+      "values": {
+        "fdi": 28.0,
+        "pd": 21.0,
+        "m5s": 10.0,
+        "fi": 6.6,
+        "avs": 6.5,
+        "lega": 6.5,
+        "fn": 6.2,
+        "azione": 3.5,
+        "iv": 2.8,
+        "nm": 1.6,
+        "europa": 1.0
+      },
+      "comparable": false,
+      "exclusion_reason": "scenario condizionato alla candidatura di Elly Schlein",
+      "source": "https://www.adnkronos.com/politica/elezioni-sondaggi-politici-fratelli-ditalia-campo-largo_7yrsb1URaMCnfM5suCFOU",
+      "source_kind": "diffusione contemporanea del sondaggio Noto per Porta a Porta",
+      "fieldwork": null,
+      "method": null,
+      "sample": null,
+      "turnout": {
+        "label": "Affluenza stimata nello scenario Schlein",
+        "value": 61.0
+      },
+      "extra_values": {
+        "UDC": 1.1,
+        "Progetto Civico-Avanti PSI": 1.3,
+        "Sud Chiama Nord": 1.0,
+        "Più Uno": 0.5,
+        "Partito Liberaldemocratico": 0.4
+      },
+      "note": "Scenario Noto per Porta a Porta diffuso il 19 novembre e condizionato a Elly Schlein candidata del campo progressista. La formulazione altera la comparabilità con le intenzioni di voto ordinarie: scheda pubblicata ma esclusa da medie e trend. Periodo, metodo e campione non risultano disponibili nei materiali accessibili e restano mancanti."
+    },
+    {
+      "id": "noto-2026-11-19-conte",
+      "institute": "noto",
+      "published": "2026-11-19",
+      "values": {
+        "fdi": 28.0,
+        "pd": 18.0,
+        "m5s": 14.5,
+        "fi": 6.9,
+        "avs": 6.2,
+        "lega": 6.0,
+        "fn": 5.8,
+        "azione": 3.5,
+        "iv": 2.0,
+        "nm": 1.7,
+        "europa": 1.0
+      },
+      "comparable": false,
+      "exclusion_reason": "scenario condizionato alla candidatura di Giuseppe Conte",
+      "source": "https://www.adnkronos.com/politica/elezioni-sondaggi-politici-fratelli-ditalia-campo-largo_7yrsb1URaMCnfM5suCFOU",
+      "source_kind": "diffusione contemporanea del sondaggio Noto per Porta a Porta",
+      "fieldwork": null,
+      "method": null,
+      "sample": null,
+      "turnout": {
+        "label": "Affluenza stimata nello scenario Conte",
+        "value": 63.0
+      },
+      "extra_values": {
+        "UDC": 1.1,
+        "Progetto Civico-Avanti PSI": 1.2,
+        "Sud Chiama Nord": 1.0,
+        "Più Uno": 0.4,
+        "Partito Liberaldemocratico": 0.4
+      },
+      "note": "Scenario Noto per Porta a Porta diffuso il 19 novembre e condizionato a Giuseppe Conte candidato del campo progressista. La formulazione altera la comparabilità con le intenzioni di voto ordinarie: scheda pubblicata ma esclusa da medie e trend. Periodo, metodo e campione non risultano disponibili nei materiali accessibili e restano mancanti."
+    },
+    {
+      "id": "termometro-2026-11-20",
+      "institute": "termometro",
+      "published": "2026-11-20",
+      "values": {
+        "fdi": 27.9,
+        "pd": 20.5,
+        "m5s": 12.8,
+        "fi": 7.3,
+        "fn": 6.7,
+        "avs": 6.4,
+        "lega": 5.5,
+        "azione": 2.9,
+        "iv": 2.5,
+        "europa": 1.4,
+        "nm": 1.0
+      },
+      "comparable": true,
+      "source": "https://www.termometropolitico.it/90009_sondaggi-politici-tp-20-11-2026.html",
+      "source_kind": "fonte primaria Termometro Politico",
+      "fieldwork": [
+        "2026-11-18",
+        "2026-11-19"
+      ],
+      "method": "CAWI",
+      "sample": 3400,
+      "extra_values": {
+        "Altri": 5.1
+      },
+      "note": "Valori e metodologia pubblicati direttamente da Termometro Politico il 20 novembre: 3.400 interviste CAWI raccolte il 18 e 19 novembre. Quota di non risposta e margine d'errore non risultano indicati nell'articolo e restano mancanti."
+    },
+    {
+      "id": "swg-2026-11-23",
+      "institute": "swg",
+      "published": "2026-11-23",
+      "values": {
+        "fdi": 28.4,
+        "pd": 20.5,
+        "m5s": 12.8,
+        "fi": 7.0,
+        "avs": 6.3,
+        "lega": 5.9,
+        "fn": 5.9,
+        "azione": 3.3,
+        "iv": 2.2,
+        "europa": 1.3,
+        "nm": 1.1
+      },
+      "comparable": true,
+      "source": "https://tg.la7.it/sondaggi/sondaggio-politico-23-novembre-voto-23-11-2026-266412",
+      "source_kind": "committente TG La7: SWG",
+      "fieldwork": [
+        "2026-11-18",
+        "2026-11-23"
+      ],
+      "method": "CATI/CAMI/CAWI",
+      "sample": 1200,
+      "nonresponse": {
+        "label": "Non si esprime",
+        "value": 27.0
+      },
+      "extra_values": {
+        "Sud Chiama Nord": 1.0,
+        "Altri": 4.3
+      },
+      "corroborating_source": "https://politpro.eu/it/italia/sondaggi-elettorali/swg-2026-11-23/elezioni-parlamentari",
+      "note": "Rilevazione SWG diffusa dal committente TG La7 il 23 novembre, con 1.200 interviste miste CATI/CAMI/CAWI dal 18 al 23 novembre. La quota «non si esprime» è conservata con l'etichetta originale e non viene interpretata come astensione."
     }
   ],
-  "verification_note": "Controllo del 18 novembre 2026: inserite otto rilevazioni nazionali comparabili diffuse tra l'11 e il 16 novembre da Ixè, Quorum–YouTrend, Lab21, BiDiMedia, Eumetra, Only Numbers, Termometro Politico e SWG; recuperati inoltre i due scenari Noto del 5 novembre come schede fuori media. Only Numbers e Realpolitik restano un unico istituto; le schede parziali contribuiscono soltanto ai partiti pubblicati. Ripubblicazioni e depositi successivi non cambiano la data originaria. Campi non verificabili restano mancanti; indecisi, astensione e non risposta tecnica non vengono confusi. Medie e grafici avanzano al 16 novembre con l'ultima rilevazione per istituto e i pesi temporali v1."
+  "verification_note": "Controllo del 25 novembre 2026: inserite sette rilevazioni nazionali comparabili diffuse dal 17 al 23 novembre da EMG Different, Osservatorio Delphi/Piave, Quorum–YouTrend, Lab21, Eumetra, Termometro Politico e SWG. Pubblicati inoltre fuori media i due scenari condizionati Piepoli su Futuro Nazionale e i due scenari Noto legati alla candidatura Schlein o Conte. Only Numbers e Realpolitik restano un unico istituto; la segnalazione del 24 settembre è documentata soltanto da riprese successive e non viene aggiunta senza una fonte originaria verificabile. Le schede parziali contribuiscono soltanto ai partiti pubblicati; nessun valore viene recuperato da rilevazioni precedenti. Ripubblicazioni e depositi successivi non cambiano la prima data di diffusione. Campi non verificabili restano mancanti; indecisi, astensione e non risposta tecnica non vengono confusi. Medie e grafici avanzano al 23 novembre con l'ultima rilevazione per istituto e i pesi temporali v1."
 }
 
 
